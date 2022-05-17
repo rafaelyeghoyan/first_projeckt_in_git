@@ -1,0 +1,55 @@
+nav {
+    width: 100%;
+}
+.container {
+    margin-left: 135px;
+    margin-right: 269px;
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.img {
+    width: 70px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    display: inline-block;
+    margin-right: 60px;
+}
+.a_menu {
+    text-decoration: none;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;    
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.active {
+    border-bottom: 1px solid; 
+    border-top: 1px solid; 
+    padding: 4px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
