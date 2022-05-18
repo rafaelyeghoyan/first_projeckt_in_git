@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 1200px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+h2{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+  margin-bottom: 32px;
+  padding-top: 25px;
+}
+h2 span{
+  display: block;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333333
+}
+p{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 52px;
+}
+p span{
+  display: block;
+}
+.block + p{
+  margin-top: 32px;
+}
+button{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #333333;
+  padding: 30px 43px;
+  cursor: pointer;
+}
+.map_block{
+  margin-left: 34px;
+  margin-bottom: 120px;
+  width: 56%;
+  height: 453px;
+}
+.map_block img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .container{
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .container{
+    width: 800px;
+  }
+  .map_block{
+    width: 46%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .container{
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .map_block{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+}
