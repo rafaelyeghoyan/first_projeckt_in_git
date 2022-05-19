@@ -65,6 +65,77 @@ button{
   width: 100%;
   height: 100%;
 }
+.main{
+  display: none;
+}
+.taknvac{
+  background-color: #fffdfdc7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.center_block{
+  width: 500px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 10px;
+  left: 0;
+  background-color: white;
+  bottom: 0;
+}
+.text_block{
+  text-align: center;
+  width: 480px;
+  margin: auto;
+}
+.text_block h2{
+  margin: 0;
+  font-size: 32px;
+}
+.text_block input[type="text"],.text_block textarea,.text_block input[type="tel"],.text_block input[type="email"]{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+input[type="checkbox"]{
+  height: 24px;
+  width: 24px;
+}
+.marg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+.marg label{
+  width: 85%;
+  display: inline-block;
+  text-align: left;
+  margin-left: 25px;
+}
+.text_block textarea {
+  height:150px;
+}
+.text_block h2 + span{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+}
+.text_block button{
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  padding: 24px 32px;
+  font-size: 25px;
+}
 @media screen and (max-width: 1280px) {
   .container{
     width: 1000px;

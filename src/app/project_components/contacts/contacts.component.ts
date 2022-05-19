@@ -11,5 +11,12 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  openBlock() {
+  // @ts-ignore
+    document.querySelector('.main').style.display = 'block';
+  }
+  close() {
+    // @ts-ignore
+    document.querySelector('.main').style.display = 'none';
+  }
 }
