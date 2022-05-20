@@ -1,135 +1,110 @@
 footer {
-  background-color: #2C2C2C;
+    background-color: #2C2C2C;
+    width: 100%;
 }
 .container {
-  width: 1200px;
-  margin: auto;
-  padding: 58px 0;
-  display: flex;
-  justify-content: space-between;
+    width: 1160px;
+    margin: auto;
+    padding: 58px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .logo {
-  width: 145px;
+    width: 145px;
 }
 .info_contact {
-  width: 609px;
-  display: flex;
-  justify-content: space-between;
+    width: 609px;
+    display: flex;
+    justify-content: space-between;
 }
 .info {
-  margin-right: 165px;
+    margin-right: 165px;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 .a_info {
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 li {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 h5 {
-  margin: 0;
-  margin-bottom: 25px;
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;    
 }
 .map {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 .phone, .email {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .map_img {
-  width: 20px;
-  margin-right: 20px;
+    width: 20px;
+    margin-right: 20px;
 }
 .map_text {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 .phone_img, .email_img {
-  width: 16px;
-  margin-right: 14px;
+    width: 16px;
+    margin-right: 14px;
 }
 .phone {
-  margin: 32px 0;
+    margin: 32px 0;
 }
 .a_contact {
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 .media {
-  width: 193px;
+    width: 193px;
 
 }
 .media_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .size_bg {
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    background-color: white;
 }
 .digital {
-  border-top: 1px solid rgba(200, 200, 200, 0.5);
-  padding: 24px 0;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    padding: 24px 0;
 }
 .digital_text {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: center;
-  color: rgba(200, 200, 200, 0.5);
-}
-@media screen and (max-width: 1280px){
-  .container{
-    width: 1000px;
-  }
-}
-@media screen and (max-width: 1080px){
-  .container{
-    width: 800px;
-  }
-}
-@media screen and (max-width: 880px){
-  .container{
-    width: 95%;
-    flex-wrap: wrap;
-  }
-  .media{
-    margin-top: 30px;
-    flex: auto;
-  }
-  h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;    
     text-align: center;
-  }
-  .media_icon{
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
+    color: rgba(200, 200, 200, 0.5);
 }
+
+
+

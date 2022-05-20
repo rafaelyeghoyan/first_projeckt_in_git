@@ -11,7 +11,5 @@ export class SercevikatiComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  page() {
 
-  }
 }
