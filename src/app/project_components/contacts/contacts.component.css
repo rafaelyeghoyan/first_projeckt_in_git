@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 1200px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+h2{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+  margin-bottom: 32px;
+  padding-top: 25px;
+}
+h2 span{
+  display: block;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333333
+}
+p{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 52px;
+}
+p span{
+  display: block;
+}
+.block + p{
+  margin-top: 32px;
+}
+button{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #333333;
+  padding: 30px 43px;
+  cursor: pointer;
+}
+.map_block{
+  margin-left: 34px;
+  margin-bottom: 120px;
+  width: 56%;
+  height: 453px;
+}
+.map_block img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main{
+  display: none;
+}
+.taknvac{
+  background-color: #fffdfdc7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.center_block{
+  width: 500px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 10px;
+  left: 0;
+  background-color: white;
+  bottom: 0;
+}
+.text_block{
+  text-align: center;
+  width: 480px;
+  margin: auto;
+}
+.text_block h2{
+  margin: 0;
+  font-size: 32px;
+}
+.text_block input[type="text"],.text_block textarea,.text_block input[type="tel"],.text_block input[type="email"]{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+input[type="checkbox"]{
+  height: 24px;
+  width: 24px;
+}
+.marg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+.marg label{
+  width: 85%;
+  display: inline-block;
+  text-align: left;
+  margin-left: 25px;
+}
+.text_block textarea {
+  height:150px;
+}
+.text_block h2 + span{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+}
+.text_block button{
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  padding: 24px 32px;
+  font-size: 25px;
+}
+@media screen and (max-width: 1280px) {
+  .container{
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .container{
+    width: 800px;
+  }
+  .map_block{
+    width: 46%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .container{
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .map_block{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+}

@@ -1,3 +1,58 @@
 <app-header></app-header>
-<p>contacts works!</p>
+<section>
+  <div class="container">
+    <div class="contact_block">
+      <h2>
+        КОНТАКТНАЯ
+        <span>ИНФОРМАЦИЯ</span>
+      </h2>
+      <div class="block">
+        <p>
+          <b>«Digital Project»</b>
+          <span>г. Караганда, ул. Телевизионная 10</span>
+        </p>
+        <p>
+          <b>+7 (701) 77 76 811</b>
+        </p>
+        <p>Galym.sultanov@mail.ru</p>
+      </div>
+      <div class="button_block">
+        <button type="button" (click)="openBlock()">Орабтная связь</button>
+        <div class="main">
+          <div class="taknvac">
+            <div class="center_block">
+              <div class="text_block">
+                <h2>Задать вопрос</h2>
+                <span id="close" (click)="close()">X</span>
+                <form method="get">
+                  <div>
+                    <input type="text" placeholder="Имя">
+                  </div>
+                  <input type="tel" required placeholder="Номер телефона*">
+                  <div>
+                    <input type="email" required placeholder="E-mail*">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Интересующий товар/услуга">
+                  </div>
+                  <textarea required placeholder="Сообщение*"></textarea>
+                  <div class="marg">
+                    <input type="checkbox">
+                    <label>Отправляя заявку Вы соглашаетесь
+                      с политикой
+                      конфиденциальности</label>
+                  </div>
+                  <button>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map_block">
+      <img src="./assets/images/map/Снимок%20экрана%202022-05-18%20150526.png" alt="No image">
+    </div>
+  </div>
+</section>
 <app-footer></app-footer>
