@@ -1,0 +1,375 @@
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.flex_for_text_img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text_titel {
+    width: 331px;
+    padding-top: 362px;
+}
+.text_img {
+    width: 770px;
+    position: relative;
+}
+h3 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin: 0;
+}
+h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+    margin: 0;
+}
+.buttons {
+    margin: 90px 0;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.prev {
+    width: 53px;
+    height: 53px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+}
+.next {
+    width: 53px;
+    height: 53px;
+    /* background: #F9F9F9; */
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+}
+.pages {
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+.change_page, .fixed_page {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+}
+span {
+    border: 1px solid #E0E0E0;
+    transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+}
+.button_in_img {
+    position: absolute;
+    width: 222px;
+    height: 71px;
+    left: 0px;
+    bottom: 4px;
+    border: none;
+    background: #FFFFFF;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #333333;
+}
+.button_in_img > span {
+    margin-left: 15px;
+    border: none;
+}
+.about_company {
+    width: 100%;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px 30px 100px;
+    margin-bottom: 150px;
+    margin-top: 120px;
+}
+.img_company {
+    width: 56%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;  
+}
+.img_part_1 {
+    width: 48%;
+    position: relative;
+}
+.img_part_2 {
+    width: 48%;
+}
+.img_up {
+    width: 100%;
+    height: 265px;
+    position: absolute;
+    top: -30px;
+}
+.img_down {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    bottom: -60px;
+}
+.text_company {
+    width: 42%;
+}
+.text_company > h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.text_company > p {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+.text_company > button {
+    background: #FFFFFF;
+    padding: 30px 60px;
+    border: none;
+}
+.text_company > button > span {
+    margin-left: 15px;
+    border: none;
+}
+.zadacha {
+    width: 100%;
+    margin-bottom: 120px;
+}
+.zadacha > h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.zadacha > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.zadacha_1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.zadacha_1_img {
+    width: 20%;
+}
+.zadacha_1_text {
+    width: 61%;
+}
+.zadacha_1_text > p {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+    margin: 0;
+}
+.zadacha_2 {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+.zadacha_2_img {
+    width: 20%;
+}
+.zadacha_2_text {
+    width: 70%;
+}
+.zadacha_2_text > p {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+.proects {
+    width: 100%;
+    margin-bottom: 120px;
+}
+.proects > h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.img {
+    width: 100%;
+    padding-top: 60px;
+}
+.proects_img_part {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.part_1_photos {
+    width: 49%;
+    position: relative;
+}
+.hover {
+    width: 100%;
+    background: #333333a3;
+    padding: 48px 79px;
+    display: none;
+}
+.part_1_photos:hover .hover {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hover > p {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 9px;
+}
+.hover > button {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #33333300;
+    border: none;
+}
+.hover > button > span {
+    border: none;
+    margin-left: 15px;
+}
+.part_2_photo_1 {
+    width: 22%;
+}
+.part_2_photo_2 {
+    width: 44%;
+}
+.part_2_photo_3 {
+    width: 30%;
+}
+.all_proects {
+    width: 100%;
+    text-align: right;
+}
+.all_proects > button {
+    border: none;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #333333;
+    padding: 30px 39px;
+}
+.all_proects > button > span {
+    border: none;
+    margin-left: 15px;
+}
+.contact {
+    width: 100%;
+    margin-bottom: 120px;
+}
+.contact > h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin-bottom: 22px;
+}
+.contact > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_form {
+    width: 35%;
+}
+.contact_img {
+    width: 63%;
+    height: 369px;
+}
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 0 15px 21px;
+    border: none;
+    background: #F3F3F3;
+}
+form > button {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: #333333;
+    color: #FFFFFF;
+    padding: 30px 47px;
+    border: none;
+}
+form > button > span {
+    border: none;
+    margin-left: 15px;
+}
+textarea {
+    width: 100%;
+    padding: 15px 0 0 21px;
+    background: #F3F3F3;
+    border: none;
+}
+label {
+    position: relative;
+    margin: 22px 0;
+    display: block;
+}
+label > p {
+    margin-left: 35px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}

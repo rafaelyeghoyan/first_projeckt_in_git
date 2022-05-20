@@ -1,3 +1,125 @@
 <app-header></app-header>
-<h1>glavnaya works!</h1>
+<section>
+    <div class="container">
+        <div class="flex_for_text_img">
+            <div class="text_titel">
+                <h3>PROJECT</h3>
+                <h2>NURTOWN</h2>
+                <div class="buttons">
+                    <button (click) ="click_prev()" class="prev">&#8592;</button>
+                    <button (click) ="click_next()" class="next">&#8594;</button>
+                </div>
+                <div class="pages">
+                    <p class="change_page">01</p>
+                    <span></span>
+                    <p class="fixed_page">02</p>
+                </div>
+            </div>
+            <div class="text_img">
+                <img style="width: 100%" src="assets\images\glavnaya\Rectangle 6.png" alt="no image">
+                <button routerLink="/galeria" class="button_in_img">ВЗГЛЯНУТЬ <span>&#8594;</span></button>
+            </div>
+        </div>
+        <div class="about_company">
+            <div class="img_company">
+                <div class="img_part_1">
+                    <div class="img_up">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\Rectangle 8.png" alt="no image">
+                    </div>
+                    <div class="img_down">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\Rectangle 10.png" alt="no image">
+                    </div>
+                </div>
+                <div class="img_part_2">
+                    <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\Rectangle 9.png" alt="no image">
+                </div>
+            </div>
+            <div class="text_company">
+                <h2>О компании</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <button routerLink="/contacts">ЧИТАТЬ <span>&#8594;</span></button>
+            </div>
+        </div>
+        <div class="zadacha">
+            <h2>Основные задачи</h2>
+            <div>
+                <div class="zadacha_1">
+                    <div class="zadacha_1_img">
+                        <img style="width: 100%;" src="assets\images\glavnaya\1.png" alt="no image">
+                    </div>
+                    <div class="zadacha_1_text">
+                        <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                    </div>
+                </div>
+                <div class="zadacha_2">
+                    <div class="zadacha_2_img">
+                        <img style="width: 100%;" src="assets\images\glavnaya\2.png" alt="no image">
+                    </div>
+                    <div class="zadacha_2_text">
+                        <p>Постоянно совершенствовать качество предоставляемых услуг 
+                    путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="proects">
+            <h2>Наши проекты</h2>
+            <div class="img">
+                <div class="proects_img_part">
+                    <div class="part_1_photos">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\Rectangle 12.png" alt="no image">
+                        <div class="hover">
+                            <p>ДОСУГОВЫЙ ЦЕНТР</p>
+                            <button>ПОДРОБНЕЕ<span>&#8594;</span></button>
+                        </div>
+                    </div>
+                    <div class="part_1_photos">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 15.png" alt="no image">
+                    </div>
+                </div>
+                <div class="proects_img_part">
+                    <div class="part_2_photo_1">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 16.png" alt="no image">
+                    </div>
+                    <div class="part_2_photo_2">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 17.png" alt="no image">
+                    </div>
+                    <div class="part_2_photo_3">
+                        <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 18.png" alt="no image">
+                    </div>
+                </div>
+            </div>
+            <div class="all_proects">
+                <button routerLink="/proekts">ВСЕ ПРОЕКТЫ<span>&#8594;</span></button>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Связаться с нами</h2>
+            <div>
+                <div class="contact_form">
+                    <form>
+                        <input class="input" type="text" placeholder="Имя" name="first-name">
+                        <input class="input" type="tel" placeholder="Номер телефона" required name="phone-number">
+                        <input class="input" type="email" placeholder="E-mail" required name="email">
+                        <input class="input" type="text" placeholder="Интересующий товар/услуга" name="product">
+                        <textarea name="comment" placeholder="Сообщение" required rows="9"></textarea>
+                        <label>
+                            <input style="position: absolute;" type="checkbox" name="agree" checked>
+                            <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                        </label>
+                        <button>ОТПРАВИТЬ<span>&#8594;</span></button>
+                    </form>
+                </div>
+                <div class="contact_img">
+                    <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 12.png" alt="no image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <app-footer></app-footer>
