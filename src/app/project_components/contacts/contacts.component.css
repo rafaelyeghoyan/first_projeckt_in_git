@@ -100,10 +100,33 @@ button{
   width: 100%;
   height: 50px;
   margin-top: 20px;
+  background: #F3F3F3;
+  border: none;
+  outline: none;
+}
+input::placeholder,textarea::placeholder{
+  padding-left: 21px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8D8D8D;
+}
+textarea::placeholder{
+  padding-top: 14px;
+}
+textarea{
+  resize: none;
+}
+button:disabled{
+  opacity: 40%;
 }
 input[type="checkbox"]{
   height: 24px;
   width: 24px;
+  accent-color: black;
 }
 .marg{
   display: flex;

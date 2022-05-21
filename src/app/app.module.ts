@@ -13,7 +13,7 @@ import { SercevikatiComponent } from './project_components/sercevikati/sercevika
 import { ContactsComponent } from './project_components/contacts/contacts.component';
 import { NotfoundComponent } from './project_components/notfound/notfound.component';
 import { Routes, RouterModule } from '@angular/router';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const Routing: Routes = [
   {
@@ -67,7 +67,8 @@ const Routing: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(Routing),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

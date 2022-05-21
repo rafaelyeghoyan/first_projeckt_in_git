@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-contacts',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-
-  constructor() { }
+  form = this.fb.group({
+    username:['',Validators.required],
+    usertel:['',Validators.required],
+    useremail:['',Validators.required],
+    usercommit: ['',Validators.required]
+  })
+  constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
@@ -24,8 +30,8 @@ export class ContactsComponent implements OnInit {
     // @ts-ignore
     document.querySelector('.thanks_block').style.display= 'none';
   }
-  submit (event:any) {
-  event.preventDefault();
+  submit () {
+
   }
   openBlockn(){
     // @ts-ignore
