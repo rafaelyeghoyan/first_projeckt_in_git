@@ -19,6 +19,10 @@ export class ContactsComponent implements OnInit {
   close() {
     // @ts-ignore
     document.querySelector('.main').style.display = 'none';
+    // @ts-ignore
+    document.querySelector('form').style.display = 'block';
+    // @ts-ignore
+    document.querySelector('.thanks_block').style.display= 'none';
   }
   submit (event:any) {
   event.preventDefault();
