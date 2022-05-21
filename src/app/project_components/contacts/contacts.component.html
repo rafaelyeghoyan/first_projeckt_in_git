@@ -23,8 +23,8 @@
             <div class="center_block">
               <div class="text_block">
                 <h2>Задать вопрос</h2>
-                <span id="close" (click)="close()">X</span>
-                <form method="get">
+                <span class="close" (click)="close()">X</span>
+                <form id="form" (ngSubmit)="submit($event)">
                   <div>
                     <input type="text" placeholder="Имя">
                   </div>
@@ -42,8 +42,20 @@
                       с политикой
                       конфиденциальности</label>
                   </div>
-                  <button>Submit</button>
+                  <button (click)="openBlockn()">Submit</button>
                 </form>
+                <div class="thanks_block">
+                  <div class="icon_block">
+                    <img src="assets/images/okay/ok.png" alt="No image">
+                  </div>
+                  <div class="text_block">
+                    <h2>Спасибо !</h2>
+                      <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+                  </div>
+                  <div class="button_block">
+                    <button type="button" (click)="close()">ВЕРНУТСЯ НАЗАД</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -53,6 +65,6 @@
     <div class="map_block">
       <img src="./assets/images/map/Снимок%20экрана%202022-05-18%20150526.png" alt="No image">
     </div>
-  </div>
+    </div>
 </section>
 <app-footer></app-footer>
