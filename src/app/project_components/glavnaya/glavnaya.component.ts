@@ -13,20 +13,27 @@ export class GlavnayaComponent implements OnInit {
 
   ngOnInit(): void {
   }
- i:any = 0;
+  bool_1:any = true;
+  bool_2:any = false;
+  i:any = 0;
+  num:any = '01';
   click_next() {
     this.i++
-    if(this.i == 2) {
+    if(this.i == 1) {
       this.i = 0;
+      this.bool_1 = false;
+      this.bool_2= true;
     }   
-    // console.log(this.i);
+    this.num = '02';
   }
 
   click_prev() {
     this.i--
     if(this.i == -1) {
-      this.i = 1;
-    }   
-    // console.log(this.i);
+      this.i = 0;
+      this.bool_1 = true;
+      this.bool_2= false;
+    }  
+    this.num = '01' 
   }
 }

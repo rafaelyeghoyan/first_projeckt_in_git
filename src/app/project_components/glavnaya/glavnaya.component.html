@@ -6,11 +6,11 @@
                 <h3>PROJECT</h3>
                 <h2>NURTOWN</h2>
                 <div class="buttons">
-                    <button (click) ="click_prev()" class="prev">&#8592;</button>
-                    <button (click) ="click_next()" class="next">&#8594;</button>
+                    <button [disabled]="bool_1" (click) ="click_prev()" class="prev">&#8592;</button>
+                    <button [disabled]="bool_2" (click) ="click_next()" class="next">&#8594;</button>
                 </div>
                 <div class="pages">
-                    <p class="change_page">01</p>
+                    <p class="change_page">{{num}}</p>
                     <span></span>
                     <p class="fixed_page">02</p>
                 </div>
@@ -80,14 +80,26 @@
                     </div>
                     <div class="part_1_photos">
                         <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 15.png" alt="no image">
+                        <div class="hover">
+                            <p>ДОСУГОВЫЙ ЦЕНТР</p>
+                            <button>ПОДРОБНЕЕ<span>&#8594;</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="proects_img_part">
                     <div class="part_2_photo_1">
                         <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 16.png" alt="no image">
+                        <div class="hover">
+                            <p>ДОСУГОВЫЙ ЦЕНТР</p>
+                            <button>ПОДРОБНЕЕ<span>&#8594;</span></button>
+                        </div>
                     </div>
                     <div class="part_2_photo_2">
                         <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 17.png" alt="no image">
+                        <div class="hover">
+                            <p>ДОСУГОВЫЙ ЦЕНТР</p>
+                            <button>ПОДРОБНЕЕ<span>&#8594;</span></button>
+                        </div>
                     </div>
                     <div class="part_2_photo_3">
                         <img style="width: 100%; height: 100%;" src="assets\images\glavnaya\image 18.png" alt="no image">
