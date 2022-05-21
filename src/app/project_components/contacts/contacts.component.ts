@@ -11,7 +11,6 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-<<<<<<< HEAD
   openBlock() {
   // @ts-ignore
     document.querySelector('.main').style.display = 'block';
@@ -21,7 +20,4 @@ export class ContactsComponent implements OnInit {
     // @ts-ignore
     document.querySelector('.main').style.display = 'none';
   }
-=======
-
->>>>>>> c6a64fc4568016db976bf73e0435539cde26f94b
 }
