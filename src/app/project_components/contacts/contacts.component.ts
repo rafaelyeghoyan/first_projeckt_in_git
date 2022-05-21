@@ -11,6 +11,7 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   openBlock() {
   // @ts-ignore
     document.querySelector('.main').style.display = 'block';
@@ -18,5 +19,14 @@ export class ContactsComponent implements OnInit {
   close() {
     // @ts-ignore
     document.querySelector('.main').style.display = 'none';
+  }
+  submit (event:any) {
+  event.preventDefault();
+  }
+  openBlockn(){
+    // @ts-ignore
+    document.querySelector('.thanks_block').style.display= 'block';
+    // @ts-ignore
+    document.querySelector('form').style.display = 'none';
   }
 }

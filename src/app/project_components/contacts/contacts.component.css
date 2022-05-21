@@ -67,14 +67,15 @@ button{
 }
 .main{
   display: none;
-}
-.taknvac{
   background-color: #fffdfdc7;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+.taknvac{
+
 }
 .center_block{
   width: 500px;
@@ -135,6 +136,29 @@ input[type="checkbox"]{
   color: white;
   padding: 24px 32px;
   font-size: 25px;
+}
+.thanks_block{
+  display: none;
+}
+.text_block h2{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+.text_block p{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #4F4F4F;
 }
 @media screen and (max-width: 1280px) {
   .container{
