@@ -15,7 +15,6 @@ export class ContactsComponent implements OnInit {
   // @ts-ignore
     document.querySelector('.main').style.display = 'block';
   }
-  save(){}
   close() {
     // @ts-ignore
     document.querySelector('.main').style.display = 'none';
