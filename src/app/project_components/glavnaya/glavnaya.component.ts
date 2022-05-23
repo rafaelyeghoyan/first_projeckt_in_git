@@ -1,5 +1,6 @@
 import { preserveWhitespacesDefault } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-glavnaya',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class GlavnayaComponent implements OnInit {
  
-  constructor() { }
+  constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
@@ -36,4 +37,21 @@ export class GlavnayaComponent implements OnInit {
     }  
     this.num = '01' 
   }
+
+  form = this.fb.group({
+    firstname: '',
+    phonenumber: ['', [Validators.required,Validators.pattern(/^[^A-Za-z]{1,}$/)]],
+    email: ['',[Validators.required,Validators.pattern(/^[a-z,0-9,\.]+@[a-z]+\.+[a-z]{2,4}$/)]],
+    product: '',
+    comment: ['', Validators.required]
+  })
+  submit(){
+    this.form.reset();
+  }
+
+
+
+
+
+
 }
