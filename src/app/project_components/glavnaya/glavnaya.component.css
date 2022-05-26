@@ -372,3 +372,125 @@ label > p {
     letter-spacing: 0.03em;
     color: #333333;
 }
+
+@media screen and (max-width: 1280px){
+    .container{
+      width: 1000px;
+    }
+    .text_titel {
+        padding-top: 175px;
+    }
+    .text_img {
+        width: 560px;
+    }
+    .proects_img_part {
+        flex-wrap: wrap;
+    }
+    .part_2_photo_1,.part_2_photo_3 {
+        width: 49%;
+    }
+    .part_2_photo_2 {
+        width: 100%;
+        order: 3;
+        margin-top: 30px;
+    }
+    .hover {
+        padding: 48px 20px;
+    }
+    .all_proects {
+        width: 100%;
+        text-align: right;
+        margin-top: 845px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .container{
+      width: 800px;
+    }
+    .flex_for_text_img {
+        flex-wrap: wrap;
+    }
+    .text_img {
+        width: 100%;
+    }
+    .button_in_img {
+        left: -2px;
+        bottom: 2px;
+    }
+    .text_titel {
+        order: 2;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .prev, .next {
+        margin: 0 15px;
+    }
+    .buttons, .pages, .change_page, .fixed_page {
+        display: inline-block;
+    }
+    .buttons {
+        margin: 45px 0;
+        width: 170px;
+    }
+    .change_page, .fixed_page {
+        margin: 0 5px;
+    }
+    .pages > span {
+        display: inline-block;
+        transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+        width: 43px;
+        margin-bottom: 5px;
+    }
+    .about_company {
+        flex-direction: column;
+    }
+    .img_company, .text_company {
+        width: 100%;
+    }
+    .img_company {
+        margin-bottom: 20px;
+    }
+    .img_down {
+        bottom: 0;
+    }
+    .zadacha > div {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .zadacha_1, .zadacha_2 {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .zadacha_1_text {
+        width: 70%;
+    }
+    .zadacha_1_img {
+        width: 10%;
+    }
+    .zadacha_2_img {
+        width: 15%;
+    }
+    .all_proects {
+        width: 100%;
+        text-align: right;
+        margin-top: 655px;
+    }
+    .hover > p {
+        font-size: 50px;
+    }
+    .contact > div {
+        flex-wrap: wrap;
+    }
+    .contact_img {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .contact_form {
+        width: 60%;
+        order: 2;
+    }
+}
+
+
+
+

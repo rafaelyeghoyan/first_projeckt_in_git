@@ -32,6 +32,32 @@ li {
   border-top: 1px solid;
   padding: 4px 0;
 }
+.menu_line {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+.dropdown_menu {
+  display: none;
+  position: relative;
+  padding: 20px 0;
+}
+.mini_menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+  right: 0;
+  padding: 0 15px;
+}
+.mini_menu ul li {
+  display: block;
+  margin: 5px 0;
+}
+.dropdown_menu:hover .mini_menu{
+  display: inline-block;
+}
 @media screen and (max-width: 1280px){
   .container{
     width: 1000px;
@@ -44,6 +70,12 @@ li {
 }
 @media screen and (max-width: 880px){
   .container{
-    width: 95%;
+    width: 90%;
+  }
+  .menu {
+    display: none;
+  }
+  .dropdown_menu {
+    display: inline-block;
   }
 }
