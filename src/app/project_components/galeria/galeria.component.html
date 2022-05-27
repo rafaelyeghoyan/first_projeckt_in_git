@@ -1,3 +1,25 @@
 <app-header></app-header>
-<h1>galeria works!</h1>
+<section>
+  <div class="container">
+    <h2>ГАЛЕРЕЯ</h2>
+    <h3>ФОТОГРАФИЙ</h3>
+    <div class="line"></div>
+    <div class="images">
+      <div id="img_div" *ngFor="let item of data">
+        <img src="{{item.src}}" alt="{{item.alt}}">
+        <p>Описание или пояснение к изображению.</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="pages">
+        <p class="change_page">{{num}}</p>
+        <span></span>
+        <p class="fixed_page">05</p>
+      </div>
+      <button [disabled]="bool_1" (click) ="click_prev()" class="prev">&#8592;</button>
+      <button [disabled]="bool_2" (click) ="click_next()" class="next">&#8594;</button>
+    </div>
+
+  </div>
+</section>
 <app-footer></app-footer>
