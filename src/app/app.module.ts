@@ -14,6 +14,8 @@ import { ContactsComponent } from './project_components/contacts/contacts.compon
 import { NotfoundComponent } from './project_components/notfound/notfound.component';
 import { Routes, RouterModule } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { HttpComponent } from './project_components/http/http.component';
 
 const Routing: Routes = [
   {
@@ -45,6 +47,10 @@ const Routing: Routes = [
     component: ContactsComponent
   },
   {
+    path: 'http',
+    component: HttpComponent
+  },
+  {
     path: '**',
     component: NotfoundComponent
   },
@@ -62,13 +68,15 @@ const Routing: Routes = [
     InproektsComponent,
     SercevikatiComponent,
     ContactsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(Routing),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
