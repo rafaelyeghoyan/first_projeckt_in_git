@@ -15,6 +15,7 @@
 li {
   display: inline-block;
   margin-right: 60px;
+  position: relative;
 }
 .a_menu {
   text-decoration: none;
@@ -32,6 +33,21 @@ li {
   border-top: 1px solid;
   padding: 4px 0;
 }
+.a_hover {
+  display: none;
+
+}
+li:hover  .a_hover {
+  display: inline-block;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  position: absolute;
+  padding: 11px 0;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
 .menu_line {
   width: 30px;
   height: 4px;
@@ -47,7 +63,7 @@ li {
   display: none;
   position: absolute;
   z-index: 2;
-  background-color: red;
+  background-image: linear-gradient(#c0d3e1, white 70%);
   right: 0;
   padding: 0 15px;
 }
@@ -70,7 +86,7 @@ li {
 }
 @media screen and (max-width: 880px){
   .container{
-    width: 90%;
+    width: 600px;
   }
   .menu {
     display: none;
@@ -79,3 +95,16 @@ li {
     display: inline-block;
   }
 }
+@media screen and (max-width: 680px){
+  .container{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px){
+  .container{
+    width: 270px;
+  }
+}
+
+
+
