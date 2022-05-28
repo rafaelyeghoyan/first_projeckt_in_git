@@ -1,3 +1,9 @@
+const url = '';
 export const environment = {
-  production: true
+  production: true,
+  http: {
+    homeData:{
+      homeRoutUrl: url + '/home'
+    },
+  }
 };
