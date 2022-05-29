@@ -1,0 +1,72 @@
+h2 span{
+    display: block;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  h2{
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
+  .container{
+    width: 1200px;
+    margin: auto;
+  }
+  .block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .child{
+    width: 22%;
+  }
+  .pagenum{
+    text-align: right;
+  }
+  @media screen and (max-width: 1280px){
+    .container{
+      width: 1000px;
+    }
+  }
+  @media screen and (max-width: 1080px){
+    .container{
+      width: 900px;
+    }
+    .block{
+      justify-content: space-evenly;
+    }
+    .child{
+      width: 35%;
+    }
+  }
+  @media screen and (max-width: 980px){
+    .container{
+      width: 700px;
+    }
+    .child{
+      width: 48%;
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (max-width: 780px){
+    .container{
+      width: 95%;
+    }
+    .block{
+      justify-content: center;
+    }
+    .child{
+      width: 100%;
+    }
+  }
+  

@@ -1,19 +1,18 @@
-import { preserveWhitespacesDefault } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder,  Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-glavnaya',
-  templateUrl: './glavnaya.component.html',
-  styleUrls: ['./glavnaya.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
+export class HomeComponent implements OnInit {
 
-export class GlavnayaComponent implements OnInit {
- 
   constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
+
   bool_1:any = true;
   bool_2:any = false;
   i:any = 0;
@@ -48,10 +47,5 @@ export class GlavnayaComponent implements OnInit {
   submit(){
     this.form.reset();
   }
-
-
-
-
-
 
 }
