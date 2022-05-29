@@ -1,9 +1,8 @@
-const url = '';
+const url = 'http://localhost:3000/';
 export const environment = {
   production: true,
   http: {
-    homeData:{
-      homeRoutUrl: url + '/home'
-    },
+      get_project : url + "project",
+      get_inproject : url + "inproject"
   }
 };
