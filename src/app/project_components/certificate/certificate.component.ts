@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {RequestService} from "../../service/request.service";
+import {environment} from "../../../environments/environment.prod";
 
 @Component({
   selector: 'app-certificate',
@@ -6,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certificate.component.css']
 })
 export class CertificateComponent implements OnInit {
+  data:any= [
+    {
+      "id": 1,
+      "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
+    },
+    {
+      "id": 2,
+      "url": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png"
+    },
+    {
+      "id": 3,
+      "url": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png"
+    }
+  ];
   bool_1:any = true;
   bool_2:any = false;
   i:any = 1;
@@ -30,9 +46,14 @@ export class CertificateComponent implements OnInit {
     this.num += this.i;
   }
 
-  constructor() { }
+  constructor(public request:RequestService) { }
 
   ngOnInit(): void {
   }
 
+  getRequest(){
+    this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
+    this.data = res;
+    })
+  }
 }
