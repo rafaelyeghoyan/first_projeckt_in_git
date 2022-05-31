@@ -33,6 +33,8 @@
   }
   .images > div {
     margin: 0 15px 15px 15px;
+    margin: 15px;
+    margin-top: 0;
     background-color: #c0d3e1;
     width: 204px;
     height: 260px;
@@ -84,6 +86,8 @@
     color: #333333;
     background: #FBFBFB;
     padding: 20px 20px 0px 20px;
+    padding: 20px;
+    padding-bottom: 0;
     width: 100%;
     height: 120px;
     margin-top: 140px;
@@ -106,6 +110,7 @@
       width: 1000px;
     }
     #img_div {
+    #img_div { 
       width: 22%;
     }
     .images {
@@ -120,6 +125,7 @@
       width: 800px;
     }
     #img_div {
+    #img_div { 
       width: 28%;
     }
   }
@@ -140,6 +146,11 @@
     }
     .images > div {
       margin: 5px;
+    #img_div { 
+      width: 46%;
+    }
+    .images > div {
+      margin: 5px; 
     }
     .buttons {
       margin: 50px 0px;
@@ -158,6 +169,7 @@
       line-height: 45px;
     }
     #img_div {
+    #img_div { 
       width: 100%;
     }
     .buttons  {
@@ -168,6 +180,7 @@
     }
     .images > div {
       margin: 5px 0;
+      margin: 5px 0; 
     }
     .pages {
       width: 100%;
@@ -185,4 +198,5 @@
     .next {
       margin-left: 35px;
     }
+  }
   }
