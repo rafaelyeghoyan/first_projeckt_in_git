@@ -55,9 +55,9 @@ export class CertificateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getRequest(){
-    this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
-    this.data = res;
-    })
-  }
+  // getRequest(){
+    // this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
+  //   this.data = res;
+  //   })
+  // }
 }
