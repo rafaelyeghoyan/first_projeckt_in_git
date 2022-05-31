@@ -26,7 +26,7 @@
       <h4>Задать вопрос
       </h4><span (click)="goPrevButton()">X</span>
       </div>
-      <form (ngSubmit)="save()" [formGroup]="form">
+      <form [formGroup]="form">
         <input type="text" name="username" placeholder="Имя" formControlName="username">
         <div>
           <input type="tel" placeholder="Номер телефона" required name="tellnmber" formControlName="tellnmber">

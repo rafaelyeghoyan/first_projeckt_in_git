@@ -248,17 +248,29 @@ form button{
 .hidden_block{
   display: none;
 }
+button:disabled{
+  background: rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 1360px) {
+  .container{
+    width: 1200px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .container{
     width: 1000px;
   }
-}
-@media screen and (max-width: 1080px) {
-  .container{
-    width: 800px;
+  .img_part{
+    width: 43%;
   }
-  .map_block{
-    width: 46%;
+}
+@media screen and (max-width: 1085px) {
+  .container{
+    width: 880px;
+    margin: auto;
+  }
+  .text_part{
+    margin: 0;
   }
 }
 @media screen and (max-width: 880px) {
@@ -266,8 +278,12 @@ form button{
     width: 95%;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 120px;
   }
-  .map_block{
+  .section_parts{
+    flex-direction: column-reverse;
+  }
+  .img_part{
     width: 100%;
     margin-top: 25px;
     margin-left: 0;
@@ -277,5 +293,68 @@ form button{
   }
   h2 span{
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 500px){
+  .text_part h3{
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .text_part h2{
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content_block {
+    width: 315px;
+    margin: auto;
+  }
+
+  form input, form textarea {
+    width: 315px;
+  }
+
+  form .checkbox_block input[type="checkbox"] + label {
+    width: 270px;
+  }
+
+  form button,.thanks_block .content_block button{
+    width: 315px;
+    padding: 0;
+  }
+  .hidden_block{
+    width: 350px;
+    padding: 5px 0 0 0;
+  }
+}
+@media screen and (max-width: 360px){
+  .hidden_block{
+    width: 300px;
+  }
+  .content_block {
+    width: 290px;
+  }
+
+  form input, form textarea {
+    width: 290px;
+  }
+
+  form .checkbox_block input[type="checkbox"] + label {
+    width: 200px;
+  }
+
+  form button,.thanks_block .content_block button{
+    width: 290px;
+  }
+}
+@media screen and (max-width: 350px){
+  .text_part h3{
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .text_part h2{
+    font-size: 35px;
+    line-height: 35px;
   }
 }
