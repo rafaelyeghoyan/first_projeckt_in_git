@@ -49,7 +49,6 @@ export class CertificateComponent implements OnInit {
     }
     this.num += this.i;
   }
-
   constructor(public request:RequestService) { }
 
   ngOnInit(): void {
