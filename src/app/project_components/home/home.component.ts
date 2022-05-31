@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
   bool_1:any = true;
