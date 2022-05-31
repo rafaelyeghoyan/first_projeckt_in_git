@@ -16,6 +16,7 @@ export class ContactsComponent implements OnInit {
   constructor(public fb:FormBuilder) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
   openBlock() {
