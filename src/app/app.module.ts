@@ -16,6 +16,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { HttpComponent } from './project_components/http/http.component';
+import { LowerUpperCasePipe } from './pipes/lower-upper-case.pipe';
 
 const Routing: Routes = [
   {
@@ -69,7 +70,8 @@ const Routing: Routes = [
     SercevikatiComponent,
     ContactsComponent,
     NotfoundComponent,
-    HttpComponent
+    HttpComponent,
+    LowerUpperCasePipe
   ],
   imports: [
     BrowserModule,
