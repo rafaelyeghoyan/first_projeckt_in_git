@@ -1,20 +1,20 @@
 {
   "sertificat": [
     {
-      "title": "",
-      "subtitle": "",
+      "title": "Сертификаты",
+      "subtitle": "КОМПАНИИ",
       "images": [
         {
           "id": 1,
-          "url": ""
+          "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
         },
         {
           "id": 2,
-          "url": ""
+          "url": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png"
         },
         {
           "id": 3,
-          "url": ""
+          "url": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png"
         }
       ]
     }

@@ -8,14 +8,8 @@
             </span>
     </h2>
     <div class="block">
-      <div class="child">
-        <img src="assets/images/certificate/photo_2019-05-23_19-46-09.png" alt="No image">
-      </div>
-      <div class="child">
-        <img src="assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png" alt="No image">
-      </div>
-      <div class="child">
-        <img src="assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png" alt="No image">
+      <div class="child" *ngFor="let item of data">
+        <img src="{{item.url}}" alt="No image">
       </div>
     </div>
     <div class="buttons">

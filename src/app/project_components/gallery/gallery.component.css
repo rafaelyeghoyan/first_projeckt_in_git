@@ -110,7 +110,6 @@
       width: 1000px;
     }
     #img_div {
-    #img_div { 
       width: 22%;
     }
     .images {
@@ -125,7 +124,6 @@
       width: 800px;
     }
     #img_div {
-    #img_div { 
       width: 28%;
     }
   }
@@ -146,11 +144,12 @@
     }
     .images > div {
       margin: 5px;
-    #img_div { 
+    }
+    #img_div {
       width: 46%;
     }
     .images > div {
-      margin: 5px; 
+      margin: 5px;
     }
     .buttons {
       margin: 50px 0px;
@@ -169,7 +168,6 @@
       line-height: 45px;
     }
     #img_div {
-    #img_div { 
       width: 100%;
     }
     .buttons  {
@@ -180,7 +178,7 @@
     }
     .images > div {
       margin: 5px 0;
-      margin: 5px 0; 
+      margin: 5px 0;
     }
     .pages {
       width: 100%;
@@ -199,4 +197,4 @@
       margin-left: 35px;
     }
   }
-  }
+
