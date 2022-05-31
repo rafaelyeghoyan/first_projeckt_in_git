@@ -30,6 +30,48 @@ h2 span{
   .child{
     width: 22%;
   }
+
+.buttons {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.prev {
+  width: 53px;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+}
+.next {
+  width: 53px;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+}
+.change_page, .fixed_page {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #BDBDBD;
+}
+.change_page {
+  color: #333333;
+}
+.change_page + span {
+  border: 1px solid #E0E0E0;
+  transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+}
+.pages {
+  width: 142px;
+  display: flex;
+  justify-content: space-between;
+}
   .pagenum{
     text-align: right;
   }
@@ -69,4 +111,23 @@ h2 span{
       width: 100%;
     }
   }
-  
+@media screen and (max-width: 500px){
+  h2 span{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .block{
+    justify-content: center;
+  }
+  .child{
+    width: 300px;
+  }
+  .child img{
+    display: block;
+    width: 100%;
+  }
+}

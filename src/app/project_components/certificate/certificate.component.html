@@ -18,6 +18,14 @@
         <img src="assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png" alt="No image">
       </div>
     </div>
+    <div class="buttons">
+      <div class="pages">
+      <p class="change_page">{{num}}</p>
+      <span></span>
+      <p class="fixed_page">05</p>
+      </div>
+      <button [disabled]="bool_1" (click) ="click_prev()" class="prev">&#8592;</button>
+      <button [disabled]="bool_2" (click) ="click_next()" class="next">&#8594;</button>
     <div class="pagenum">
       <p>
         <span>/05</span>
