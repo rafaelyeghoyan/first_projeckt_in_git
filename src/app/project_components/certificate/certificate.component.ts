@@ -20,6 +20,10 @@ export class CertificateComponent implements OnInit {
     {
       "id": 3,
       "url": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png"
+    },
+    {
+      "id": 4,
+      "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
     }
   ];
   bool_1:any = true;
