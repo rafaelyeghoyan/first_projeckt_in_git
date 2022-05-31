@@ -1,70 +1,61 @@
 <app-header></app-header>
 <section>
   <div class="container">
-    <div class="contact_block">
-      <h2>
-        КОНТАКТНАЯ
-        <span>ИНФОРМАЦИЯ</span>
-      </h2>
-      <div class="block">
-        <p>
-          <b>«Digital Project»</b>
-          <span>г. Караганда, ул. Телевизионная 10</span>
-        </p>
-        <p>
-          <b>+7 (701) 77 76 811</b>
-        </p>
-        <p>Galym.sultanov@mail.ru</p>
-      </div>
-      <div class="button_block">
-        <button type="button" (click)="openBlock()">Орабтная связь</button>
-        <div class="main">
-          <div class="taknvac">
-            <div class="center_block">
-              <div class="text_block">
-                <h2>Задать вопрос</h2>
-                <span class="close" (click)="close()">X</span>
-                <form id="form" (ngSubmit)="submit()" [formGroup]="form">
-                  <div>
-                    <input type="text" placeholder="Имя" name="username" formControlName="username">
-                  </div>
-                  <input type="tel" required placeholder="Номер телефона*" name="usertel" formControlName="usertel">
-                  <div>
-                    <input type="email" required placeholder="E-mail*" formControlName="useremail">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Интересующий товар/услуга">
-                  </div>
-                  <textarea required placeholder="Сообщение*" name="usercommit" formControlName="usercommit"></textarea>
-                  <div class="marg">
-                    <input type="checkbox" required>
-                    <label>Отправляя заявку Вы соглашаетесь
-                      с политикой
-                      конфиденциальности</label>
-                  </div>
-                  <button (click)="openBlockn()" [disabled]="form.invalid">Submit</button>
-                </form>
-                <div class="thanks_block">
-                  <div class="icon_block">
-                    <img src="assets/images/okay/ok.png" alt="No image">
-                  </div>
-                  <div class="text_block">
-                    <h2>Спасибо !</h2>
-                      <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
-                  </div>
-                  <div class="button_block">
-                    <button type="button" (click)="close()">ВЕРНУТСЯ НАЗАД</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="section_parts">
+      <div class="text_part">
+        <h3>КОНТАКТНАЯ</h3>
+        <h2>ИНФОРМАЦИЯ</h2>
+        <div class="contact_text">
+          <p class="addres_text">
+            <b>«Digital Project»</b> <br>
+            г. Караганда, ул. Телевизионная 10
+          </p>
+          <p class="phonenumber">+7 (701) 77 76 811</p>
+          <p class="contact_mail">Galym.sultanov@mail.ru</p>
+            <button class="contact_button" (click)="openForm()">Орабтная связь</button>
         </div>
       </div>
+      <div class="img_part">
+        <img src="assets/images/map/Снимок%20экрана%202022-05-18%20150526.png" alt="no image">
+      </div>
     </div>
-    <div class="map_block">
-      <img src="./assets/images/map/Снимок%20экрана%202022-05-18%20150526.png" alt="No image">
+  </div>
+  <div class="hidden_block">
+    <div class="content_block form_block">
+      <div class="title">
+      <h4>Задать вопрос
+      </h4><span (click)="goPrevButton()">X</span>
+      </div>
+      <form (ngSubmit)="save()" [formGroup]="form">
+        <input type="text" name="username" placeholder="Имя" formControlName="username">
+        <div>
+          <input type="tel" placeholder="Номер телефона" required name="tellnmber" formControlName="tellnmber">
+        </div>
+        <input type="email" name="email" required placeholder="E-mail" formControlName="email">
+        <div>
+          <input type="text" name="product" placeholder="Интересующий товар/услуга">
+        </div>
+        <textarea placeholder="Сообщение" name="sms" required formControlName="sms"></textarea>
+        <div class="checkbox_block">
+          <input type="checkbox" required name="secur" formControlName="secur">
+          <label>Отправляя заявку Вы соглашаетесь
+            с политикой
+            конфиденциальности</label>
+        </div>
+        <button (click)="buttonSend()" type="submit" [disabled]="form.invalid">Отправить</button>
+      </form>
     </div>
+    <div class="thanks_block">
+      <div class="content_block">
+          <span (click)="goPrevButton()">X</span>
+        <div class="img_block">
+          <img src="assets/images/okay/ok.png" alt="no images">
+        </div>
+        <h5>Спасибо !</h5>
+        <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+        <button (click)="goPrevButton()">ВЕРНУТСЯ НАЗАД</button>
+      </div>
     </div>
+  </div>
 </section>
 <app-footer></app-footer>

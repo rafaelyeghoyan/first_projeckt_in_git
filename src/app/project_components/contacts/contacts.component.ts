@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
@@ -8,35 +8,29 @@ import {FormBuilder, Validators} from "@angular/forms";
 })
 export class ContactsComponent implements OnInit {
   form = this.fb.group({
-    username:['',Validators.required],
-    usertel:['',Validators.required],
-    useremail:['',Validators.required],
-    usercommit: ['',Validators.required]
+    tellnmber:['',[Validators.required,Validators.pattern(/^(0-9)/gm)]],
+    username:['',[Validators.required, Validators.pattern(/^[a-z][^0-9]$/gm)]],
+    email:['',[Validators.required,Validators.pattern(/^[a-z]@[a-z]{1,7}\.[a-z]{2,4}$/gmi)]],
+    sms: ['',[Validators.required,]],
+    secur:['',[Validators.required,]]
   })
-  constructor(public fb:FormBuilder) { }
-
+  constructor(public fb:FormBuilder,public  el:ElementRef) { }
   ngOnInit(): void {
   }
 
-  openBlock() {
-  // @ts-ignore
-    document.querySelector('.main').style.display = 'block';
+  submit(){}
+  save(){}
+  openForm(){
+    this.el.nativeElement.querySelector('.hidden_block').style.display= 'block';
+    this.el.nativeElement.querySelector('.form_block').style.display= 'block';
   }
-  close() {
-    // @ts-ignore
-    document.querySelector('.main').style.display = 'none';
-    // @ts-ignore
-    document.querySelector('form').style.display = 'block';
-    // @ts-ignore
-    document.querySelector('.thanks_block').style.display= 'none';
+  buttonSend(){
+    this.el.nativeElement.querySelector('.form_block').style.display= 'none';
+    this.el.nativeElement.querySelector('.thanks_block').style.display = 'block';
+    this.form.reset()
   }
-  submit () {
-
-  }
-  openBlockn(){
-    // @ts-ignore
-    document.querySelector('.thanks_block').style.display= 'block';
-    // @ts-ignore
-    document.querySelector('form').style.display = 'none';
+  goPrevButton(){
+    this.el.nativeElement.querySelector('.hidden_block').style.display= 'none';
+    this.el.nativeElement.querySelector('.thanks_block').style.display = 'none';
   }
 }

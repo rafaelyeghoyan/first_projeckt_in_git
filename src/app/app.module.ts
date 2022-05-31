@@ -72,15 +72,8 @@ const Routing: Routes = [
     CertificateComponent,
     ContactsComponent,
     NotfoundComponent,
-<<<<<<< HEAD
     HttpComponent,
     LowerUpperCasePipe
-=======
-    HttpComponent
-    
-    
-    
->>>>>>> 2deb87026d2a48f06e054c063e1a57f4442186be
   ],
   imports: [
     BrowserModule,
