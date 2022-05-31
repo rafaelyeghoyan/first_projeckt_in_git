@@ -30,6 +30,7 @@ h2 span{
   .child{
     width: 22%;
   }
+
 .buttons {
   margin-top: 90px;
   margin-bottom: 90px;
@@ -71,6 +72,9 @@ h2 span{
   display: flex;
   justify-content: space-between;
 }
+  .pagenum{
+    text-align: right;
+  }
   @media screen and (max-width: 1280px){
     .container{
       width: 1000px;

@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certificate.component.css']
 })
 export class CertificateComponent implements OnInit {
-
   bool_1:any = true;
   bool_2:any = false;
   i:any = 1;
@@ -30,7 +29,6 @@ export class CertificateComponent implements OnInit {
     }
     this.num += this.i;
   }
-
 
   constructor() { }
 
