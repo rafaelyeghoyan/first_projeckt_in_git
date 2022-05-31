@@ -33,20 +33,10 @@ li {
   border-top: 1px solid;
   padding: 4px 0;
 }
-.a_hover {
-  display: none;
-
-}
-li:hover  .a_hover {
-  display: inline-block;
+.a_hover:hover {
   border-bottom: 1px solid;
   border-top: 1px solid;
-  position: absolute;
-  padding: 11px 0;
-  top: -2px;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+  padding: 4px 0;
 }
 .menu_line {
   width: 30px;
