@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,7 +15,6 @@ import { Routes, RouterModule } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { HttpComponent } from './project_components/http/http.component';
-
 const Routing: Routes = [
   {
     path: '',

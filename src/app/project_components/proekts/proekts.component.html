@@ -2,77 +2,24 @@
 <div class="main">
   <div class="container">
     <div class="div_title">
-      <h2 class="h2_title"> <span class="span_title"> НАШИ</span>   ПРОЕКТЫ      </h2>
+      <h2 class="h2_title"> <span class="span_title"> НАШИ</span> ПРОЕКТЫ      </h2>
     </div>
     <div class="div_section">
-      <div class="child">
+      <div class="child" *ngFor="let item of data">
         <div class="divImageChild">
-          <img src="/assets/JorImages/imagesJor1.png" alt="No image" class="imageChild">
+          <img src="{{item.image}}" alt="No image" class="imageChild">
         </div>
         <div class="divTextsChild">
-          <h3 class="h3_child">Общеобразовательная школа</h3>
-          <p class="p_child">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy
-            text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <h3 class="h3_child">{{item.title}}</h3>
+          <p class="p_child">{{item.subtitle}}</p>
           <div class="div_button">
             <div class="textDivBtn">
-              СМОТРЕТЬ
-            </div>
-            <div class="divVector">
-              <img src="/assets/JorImages/imagesJorVector.png" alt="No image">
+             <a  routerLink="{{item.rout}}" class="linkBtn">  {{item.link}} <img src="{{item.vector}}" alt="No image" class="image_vector"></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="child">
-        <div class="divImageChild">
-          <img src="/assets/JorImages/imagesJor2.png" alt="No image" class="imageChild">
-        </div>
-        <div class="divTextsChild">
-          <h3 class="h3_child">Паркинг на 500 автомобилей</h3>
-          <p class="p_child">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy
-            text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <div class="div_button">
-            <div class="textDivBtn">
-              <a  routerLink="/inproecks" class="linkBtn"> СМОТРЕТЬ </a>
-            </div>
-            <div class="divVector">
-              <img src="/assets/JorImages/imagesJorVector.png" alt="No image">
-            </div>
-          </div>
         </div>
       </div>
-      <div class="child">
-        <div class="divImageChild">
-          <img src="/assets/JorImages/imagesJor3.png" alt="No image" class="imageChild">
-        </div>
-        <div class="divTextsChild">
-          <h3 class="h3_child">Проект интерьера офиса</h3>
-          <p class="p_child">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy
-            text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <div class="div_button">
-            <div class="textDivBtn">
-              СМОТРЕТЬ
-            </div>
-            <div class="divVector">
-              <img src="/assets/JorImages/imagesJorVector.png" alt="No image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="divEnd">
-      <p class="p_End">01<span class="spanSlash">/</span>05</p>
-      <div class="divVectors">
-        <img src="/assets/JorImages/vectorPrev.png" alt="No image" class="VectorPrev">
-        <img src="/assets/JorImages/vectorNext.png" alt="No image" class="VectorNext">
-      </div>
-    </div>
   </div>
 </div>
 <app-footer></app-footer>

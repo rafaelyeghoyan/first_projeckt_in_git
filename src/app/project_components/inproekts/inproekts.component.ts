@@ -16,7 +16,7 @@ export class InproektsComponent implements OnInit {
   }
   data: any[] = [];
   getRequest(){
-    this.request.getData(`${environment.http.get_project}`).subscribe((res: any)=>{
+    this.request.getData(`${environment.http.get_inproject}`).subscribe((res: any)=>{
         this.data = res;
     })
   }

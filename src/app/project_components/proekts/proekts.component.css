@@ -108,30 +108,8 @@ html,body{
   text-transform: uppercase;
   color: #333333;
 }
-.divEnd{
-  width: 100%;
-  display: flex;
-  padding: 40px 0;
-}
-.p_End{
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: #333333;
-}
-.spanSlash{
-  margin: 0 40px;
-}
-.divVectors{
-  margin: 0 30px;
-}
-.VectorPrev{
-  margin: 0 20px;
-}
-.VectorNext{
-  margin: 0 20px;
+.image_vector{
+  margin-left: 12px;
 }
 @media screen and (max-width: 1300px) {
   .main{
