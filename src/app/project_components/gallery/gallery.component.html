@@ -7,7 +7,7 @@
     <div class="images">
       <div id="img_div" *ngFor="let item of data">
         <img src="{{item.src}}" alt="{{item.alt}}">
-        <p>Описание или пояснение к изображению.</p>
+        <p>{{item.p}}</p>
       </div>
     </div>
     <div class="buttons">
