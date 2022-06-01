@@ -52,11 +52,12 @@ export class CertificateComponent implements OnInit {
   constructor(public request:RequestService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
-  getRequest(){
-    this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
-    this.data = res;
-    })
-  }
+  // getRequest(){
+    // this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
+  //   this.data = res;
+  //   })
+  // }
 }

@@ -10,6 +10,7 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
   bool_1:any = true;

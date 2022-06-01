@@ -1,20 +1,125 @@
 {
+  "header_logo":{
+    "src":"assets/images/header/Group 11.png",
+    "alt":"no image"
+  },
+  "header": [
+    {
+      "id": 1,
+      "text": "ГЛАВНАЯ",
+      "routerlink": "/home"
+    },
+    {
+      "id": 2,
+      "text": "ГАЛЕРЕЯ",
+      "routerlink": "/gallery"
+    },
+    {
+      "id": 3,
+      "text": "ПРОЕКТЫ",
+      "routerlink": "/project"
+    },
+    {
+      "id": 4,
+      "text": "СЕРТИФИКАТЫ",
+      "routerlink": "/certificate"
+    },
+    {
+      "id": 5,
+      "text": "КОНТАКТЫ",
+      "routerlink": "/contacts"
+    }
+  ],
+  "footer": [
+    {
+      "id":1,
+      "routerlink": "/home",
+      "a_text": "ГЛАВНАЯ"
+    },
+    {
+      "id": 2,
+      "a_text": "ГАЛЕРЕЯ",
+      "routerlink": "/gallery"
+    },
+    {
+      "id": 3,
+      "a_text": "ПРОЕКТЫ",
+      "routerlink": "/project"
+    },
+    {
+      "id": 4,
+      "a_text": "СЕРТИФИКАТЫ",
+      "routerlink": "/certificate"
+    },
+    {
+      "id": 5,
+      "a_text": "КОНТАКТЫ",
+      "routerlink": "/contacts"
+    }
+  ],
+  "footer_logo": {
+    "routerlink": "/home",
+    "src":"assets/images/footer/Group 11 1.png",
+    "alt":"no image"
+  },
+  "contact_footer": {
+    "map_img": "assets/images/footer/Vector.png",
+    "map_text": "100000, Республика  Казахстан,  г. Караганда, ул. Телевизионная 10",
+    "map_href": "https://www.google.com/maps",
+    "phone_img": "assets/images/footer/Vector (1).png",
+    "phone_text": "+7 (701) 77 76 811",
+    "email_img": "assets/images/footer/Vector (2).png",
+    "email_text": "Galym.sultanov@mail.ru",
+    "email_href": "mailto:Galym.sultanov@mail.ru",
+    "alt":"no image",
+    "target": "_blank"
+  },
+  "media_footer": [
+    {
+      "id":1,
+      "src": "assets/images/footer/Shape.png",
+      "alt":"no image",
+      "href": "https://www.facebook.com/",
+      "target":"_blank"
+    },
+    {
+      "id":2,
+      "src": "assets/images/footer/Shape (1).png",
+      "alt":"no image",
+      "href": "https://twitter.com/",
+      "target":"_blank"
+    },
+    {
+      "id":3,
+      "src": "assets/images/footer/Linked In.png",
+      "alt":"no image",
+      "href": "https://www.linkedin.com/",
+      "target":"_blank"
+    },
+    {
+      "id":3,
+      "src": "assets/images/footer/Shape (2).png",
+      "alt":"no image",
+      "href": "https://www.pinterest.com/",
+      "target":"_blank"
+    }
+  ],
   "sertificat": [
     {
-      "title": "Сертификаты",
-      "subtitle": "КОМПАНИИ",
+      "title": "",
+      "subtitle": "",
       "images": [
         {
           "id": 1,
-          "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
+          "url": ""
         },
         {
           "id": 2,
-          "url": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png"
+          "url": ""
         },
         {
           "id": 3,
-          "url": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png"
+          "url": ""
         }
       ]
     }
