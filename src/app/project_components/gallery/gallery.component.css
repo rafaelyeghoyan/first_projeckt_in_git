@@ -31,12 +31,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .images > div {
-    margin: 0 15px 15px 15px;
-    margin: 15px;
-    margin-top: 0;
+  #img_div {
+    margin: 15px 0;
     background-color: #c0d3e1;
-    width: 204px;
+    width: 210px;
     height: 260px;
   }
   .buttons {
@@ -77,7 +75,7 @@
     border: 1px solid #E0E0E0;
     transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
   }
-  .images > div > p {
+  #img_div > p {
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 600;
@@ -86,8 +84,6 @@
     color: #333333;
     background: #FBFBFB;
     padding: 20px 20px 0px 20px;
-    padding: 20px;
-    padding-bottom: 0;
     width: 100%;
     height: 120px;
     margin-top: 140px;
@@ -102,7 +98,7 @@
   }
   #img_div img:hover  {
     opacity: 0.2;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-timing-function: linear;
   }
   @media screen and (max-width: 1280px){
@@ -111,6 +107,7 @@
     }
     #img_div {
       width: 22%;
+      margin: 15px 15px;
     }
     .images {
       justify-content: flex-start;
@@ -125,6 +122,8 @@
     }
     #img_div {
       width: 28%;
+      margin: 0;
+      margin-left: 25px;
     }
   }
   @media screen and (max-width: 880px){
@@ -141,15 +140,7 @@
     }
     #img_div {
       width: 46%;
-    }
-    .images > div {
-      margin: 5px;
-    }
-    #img_div {
-      width: 46%;
-    }
-    .images > div {
-      margin: 5px;
+      margin: 15px 5px;
     }
     .buttons {
       margin: 50px 0px;
@@ -169,16 +160,13 @@
     }
     #img_div {
       width: 100%;
+      margin: 5px 0;
     }
     .buttons  {
       flex-wrap: wrap;
       width: 270px;
       padding: 0 15px;
       justify-content: center;
-    }
-    .images > div {
-      margin: 5px 0;
-      margin: 5px 0;
     }
     .pages {
       width: 100%;

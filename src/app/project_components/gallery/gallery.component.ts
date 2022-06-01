@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from 'src/app/service/request.service';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-gallery',
@@ -7,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public request: RequestService) { }
 
   ngOnInit(): void {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.getRequest();
+  }
+
+  data: any[] =[]
+
+  getRequest(){
+    this.request.getData(`${environment.http.get_gallery}`).subscribe((res: any) => {
+      this.data = res;
+    })
   }
 
   bool_1:any = true;
@@ -26,7 +37,6 @@ export class GalleryComponent implements OnInit {
     }
     this.num += this.i ;
   }
-
   click_prev() {
     this.i--;
     this.bool_2= false;
@@ -36,59 +46,4 @@ export class GalleryComponent implements OnInit {
     }
     this.num += this.i;
   }
-
-  data: any[] =[
-    {
-      id:1,
-      src: 'assets/images/galleria/image19.png',
-      alt: 'no image'
-    },
-    {
-      id:2,
-      src: 'assets/images/galleria/Rectangle23.png',
-      alt: 'no image'
-    },
-    {
-      id:3,
-      src: 'assets/images/galleria/Rectangle24.png',
-      alt: 'no image'
-    },
-    {
-      id:4,
-      src: 'assets/images/galleria/Rectangle25.png',
-      alt: 'no image'
-    },
-    {
-      id:5,
-      src: 'assets/images/galleria/Rectangle26.png',
-      alt: 'no image'
-    },
-    {
-      id:6,
-      src: 'assets/images/galleria/Rectangle27.png',
-      alt: 'no image'
-    },
-    {
-      id:7,
-      src: 'assets/images/galleria/Rectangle28.png',
-      alt: 'no image'
-    },
-    {
-      id:8,
-      src: 'assets/images/galleria/Rectangle29.png',
-      alt: 'no image'
-    },
-    {
-      id:9,
-      src: 'assets/images/galleria/Rectangle30.png',
-      alt: 'no image'
-    },
-    {
-      id:10,
-      src: 'assets/images/galleria/Rectangle31.png',
-      alt: 'no image'
-    }
-  ]
-
-
 }

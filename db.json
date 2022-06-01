@@ -104,6 +104,68 @@
       "target":"_blank"
     }
   ],
+  "gallery": [
+    {
+      "id":1,
+      "src": "assets/images/galleria/image19.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":2,
+      "src": "assets/images/galleria/Rectangle23.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":3,
+      "src": "assets/images/galleria/Rectangle24.png",
+      "alt":  "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":4,
+      "src": "assets/images/galleria/Rectangle25.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+     " id":5,
+      "src": "assets/images/galleria/Rectangle26.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":6,
+      "src": "assets/images/galleria/Rectangle27.png",
+     " alt": "no image",
+     "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":7,
+      "src": "assets/images/galleria/Rectangle28.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":8,
+      "src": "assets/images/galleria/Rectangle29.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":9,
+      "src": "assets/images/galleria/Rectangle30.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":10,
+      "src": "assets/images/galleria/Rectangle31.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    }
+  ],
   "sertificat": [
     {
       "title": "",
