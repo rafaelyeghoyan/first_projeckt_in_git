@@ -1,15 +1,11 @@
 <app-header></app-header>
 <section class="certificate">
   <div class="container">
-    <h2>
-      Сертификаты
-      <span>
-                КОМПАНИИ
-            </span>
+    <h2>{{cetificateTitle.title}}<span>{{cetificateTitle.subtitle}}</span>
     </h2>
     <div class="block">
       <div class="child" *ngFor="let item of data">
-        <img src="{{item.url}}" alt="No image">
+        <img src="{{item.src}}" alt="No image">
       </div>
     </div>
     <div class="buttons">

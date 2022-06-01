@@ -166,38 +166,128 @@
       "p": "Описание или пояснение к изображению."
     }
   ],
-  "sertificat": [
-    {
-      "title": "",
-      "subtitle": "",
-      "images": [
-        {
+  "certificate_icon": [
+       [ {
           "id": 1,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+          "alt": ""
         },
         {
           "id": 2,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+          "alt": ""
         },
         {
           "id": 3,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+          "alt": ""
         }
-      ]
+       ],
+    [ {
+      "id": 4,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 5,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 6,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 7,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 8,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 9,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 10,
+      "src":"assets/images/certificate/photo_2019-05-23_19-46-09.png",
+      "alt": ""
+    },
+      {
+        "id": 11,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 12,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 13,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 14,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      },
+      {
+        "id": 15,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      }
+    ]
+  ],
+  "certificate": {
+      "id": 1,
+      "title": "Сертификаты",
+      "subtitle": "КОМПАНИИ"
+    }
+  ,
+  "project": [
+    {
+      "id": 1,
+      "image": "/assets/JorImages/imagesJor1.png",
+      "title" : "Общеобразовательная школа",
+      "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link" : "СМОТРЕТЬ",
+      "rout": "/inproject",
+      "vector": "/assets/JorImages/imagesJorVector.png"
+    },
+    {
+      "id": 2,
+      "image": "/assets/JorImages/imagesJor2.png",
+      "title" : "Паркинг на 500 автомобилей",
+      "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link" : "СМОТРЕТЬ",
+      "rout": "/inproject",
+      "vector": "/assets/JorImages/imagesJorVector.png"
+    },
+    {
+      "id": 3,
+      "image": "/assets/JorImages/imagesJor3.png",
+      "title" : "Проект интерьера офиса",
+      "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link" : "СМОТРЕТЬ",
+      "rout": "/inproject",
+      "vector": "/assets/JorImages/imagesJorVector.png"
     }
   ],
-  "contact": [
+  "inproject": [
     {
-      "title": "",
-      "subtitle": "",
-      "text": [
-        {
-          "addres": "",
-          "numberphone": "",
-          "mail": ""
-        }
-      ],
-      "map": ""
+      "id" : 1,
+      "image": "/assets/JorImages/imagesJor5.png",
+      "text": " Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a typespecimen book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets\n            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with."
     }
   ]
 }

@@ -43,7 +43,11 @@
         <div class="media">
             <h5>Социальные сети</h5>
             <div class="media_icon">
-                <div class="size" *ngFor="let item of media_footer"><a href="{{item.href}}" target="{{item.target}}"><img style="width: 100%;" src="{{item.src}}" alt="{{item.alt}}"></a></div>
+                <div class="size" *ngFor="let item of media_footer">
+                  <a href="{{item.href}}" target="{{item.target}}">
+                    <img style="width: 100%;" src="{{item.src}}" alt="{{item.alt}}">
+                  </a>
+                </div>
             </div>
         </div>
     </div>
