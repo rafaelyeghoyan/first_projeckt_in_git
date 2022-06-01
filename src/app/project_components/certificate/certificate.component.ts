@@ -8,24 +8,8 @@ import {environment} from "../../../environments/environment.prod";
   styleUrls: ['./certificate.component.css']
 })
 export class CertificateComponent implements OnInit {
-  data:any= [
-    {
-      "id": 1,
-      "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
-    },
-    {
-      "id": 2,
-      "url": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png"
-    },
-    {
-      "id": 3,
-      "url": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png"
-    },
-    {
-      "id": 4,
-      "url": "assets/images/certificate/photo_2019-05-23_19-46-09.png"
-    }
-  ];
+  data:any= [];
+  cetificateTitle:any = [];
   bool_1:any = true;
   bool_2:any = false;
   i:any = 1;
@@ -38,6 +22,7 @@ export class CertificateComponent implements OnInit {
       this.bool_2= true;
     }
     this.num += this.i ;
+    this.getCertificateIcon()
   }
 
   click_prev() {
@@ -48,16 +33,33 @@ export class CertificateComponent implements OnInit {
       this.bool_1 = true;
     }
     this.num += this.i;
+    this.getCertificateIcon()
   }
   constructor(public request:RequestService) { }
 
   ngOnInit(): void {
-    window.scrollTo(0,0)
+    this.getCertificateIcon()
+    this.getCertificateTitle ()
   }
 
-  // getRequest(){
-    // this.request.getData(`${environment.http.certificateJsonUrl}`).subscribe(res=>{
-  //   this.data = res;
-  //   })
-  // }
+  getCertificateIcon(){
+    let b = this.i;
+    this.request.getData(`${environment.http.get_certificate_icon}`).subscribe(res=> {
+      let ar = this.data;
+      let a = Object.assign(res);
+        a.forEach(function (item:any,index:any,arr:any) {
+          if((b - 1 ) == index){
+            ar = arr[index];
+            console.log(b,index)
+          }
+          console.log(arr.length)
+        })
+      this.data = ar;
+    })
+  }
+  getCertificateTitle () {
+    this.request.getData(`${environment.http.get_certificate_titles}`).subscribe((res) => {
+      this.cetificateTitle = res;
+    })
+  }
 }

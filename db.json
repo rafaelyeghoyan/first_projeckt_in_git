@@ -104,38 +104,91 @@
       "target":"_blank"
     }
   ],
-  "sertificat": [
-    {
-      "title": "",
-      "subtitle": "",
-      "images": [
-        {
+  "certificate_icon": [
+       [ {
           "id": 1,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+          "alt": ""
         },
         {
           "id": 2,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+          "alt": ""
         },
         {
           "id": 3,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+          "alt": ""
         }
-      ]
-    }
+       ],
+    [ {
+      "id": 4,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 5,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 6,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 7,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 8,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 9,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 10,
+      "src":"assets/images/certificate/photo_2019-05-23_19-46-09.png",
+      "alt": ""
+    },
+      {
+        "id": 11,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 12,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 13,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 14,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      },
+      {
+        "id": 15,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      }
+    ]
   ],
-  "contact": [
-    {
-      "title": "",
-      "subtitle": "",
-      "text": [
-        {
-          "addres": "",
-          "numberphone": "",
-          "mail": ""
-        }
-      ],
-      "map": ""
+  "certificate": {
+      "id": 1,
+      "title": "Сертификаты",
+      "subtitle": "КОМПАНИИ"
     }
-  ]
 }
