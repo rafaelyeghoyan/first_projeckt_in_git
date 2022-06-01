@@ -15,8 +15,9 @@ export class ContactsComponent implements OnInit {
     secur:['']
   })
   constructor(public fb:FormBuilder,public  el:ElementRef) { }
-  ngOnInit(): void { }
-
+  ngOnInit(): void {
+    window.scrollTo(0,0)
+  }
   openForm(){
     this.el.nativeElement.querySelector('.hidden_block').style.display= 'block';
     this.el.nativeElement.querySelector('.form_block').style.display= 'block';
