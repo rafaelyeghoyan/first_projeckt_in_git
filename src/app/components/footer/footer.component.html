@@ -1,45 +1,41 @@
 <footer>
     <div class="container">
         <div class="logo">
-            <a href="#">
-                <img style="width: 100%;" src="assets\images\footer\Group 11 1.png" alt="no image">
+            <a routerLink="{{footerLogo.routerlink}}">
+                <img style="width: 100%;" src="{{footerLogo.src}}" alt="{{footerLogo.alt}}">
             </a>
         </div>
         <div class="info_contact">
             <div class="info">
                 <ul style="list-style-type: none; padding: 0; margin: 0;">
                     <li><h5>Информация</h5></li>
-                    <li><a class="a_info" routerLink="/glavnaya">ГЛАВНАЯ</a></li>
-                    <li><a class="a_info" routerLink="/galeria">ГАЛЕРЕЯ</a></li>
-                    <li><a class="a_info" routerLink="/proekts">ПРОЕКТЫ</a></li>
-                    <li><a class="a_info" routerLink="/sercevikati">СЕРТИФИКАТЫ</a></li>
-                    <li><a class="a_info" routerLink="/contacts">КОНТАКТЫ</a></li>
+                    <li *ngFor="let item of data"><a class="a_info" routerLink="{{item.routerlink}}">{{item.a_text}}</a></li>
                 </ul>
             </div>
             <div class="contact">
                 <h5>Контакты</h5>
                 <div class="map">
                     <div class="map_img">
-                        <img style="width: 100%;" src="assets\images\footer\Vector.png" alt="no image">
+                        <img style="width: 100%;" src="{{contact_footer.map_img}}" alt="{{contact_footer.alt}}">
                     </div>
                     <div class="map_text">
-                        <address><a class="a_contact" href="https://www.google.com/maps">100000, Республика  Казахстан,  г. Караганда, ул. Телевизионная 10</a></address>
+                        <address><a class="a_contact" href="{{contact_footer.map_href}}" target="{{contact_footer.target}}">{{contact_footer.map_text}}</a></address>
                     </div>
                 </div>
                 <div class="phone">
                     <div class="phone_img">
-                        <img style="width: 100%;" src="assets\images\footer\Vector (1).png" alt="no image">
+                        <img style="width: 100%;" src="{{contact_footer.phone_img}}" alt="{{contact_footer.alt}}">
                     </div>
                     <div class="phone_text">
-                        <a class="a_contact" href="#">+7 (701) 77 76 811</a>
+                        <a class="a_contact" href="#" target="{{contact_footer.target}}">{{contact_footer.phone_text}}</a>
                     </div>
                 </div>
                 <div class="email">
                     <div class="email_img">
-                        <img style="width: 100%;" src="assets\images\footer\Vector (2).png" alt="no image">
+                        <img style="width: 100%;" src="{{contact_footer.email_img}}" alt="{{contact_footer.alt}}">
                     </div>
                     <div class="email_text">
-                        <a class="a_contact" href="https://mail.ru/">Galym.sultanov@mail.ru</a>
+                        <a class="a_contact" href="{{contact_footer.email_href}}" target="{{contact_footer.target}}">{{contact_footer.email_text}}</a>
                     </div>
                 </div>
             </div>
@@ -47,10 +43,11 @@
         <div class="media">
             <h5>Социальные сети</h5>
             <div class="media_icon">
-                <div class="size"><a href="https://www.facebook.com/"><img style="width: 100%;" src="assets\images\footer\Shape.png" alt="no image"></a></div>
-                <div class="size"><a href="https://twitter.com/"><img style="width: 100%;" src="assets\images\footer\Shape (1).png" alt="no image"></a></div>
-                <div class="size_bg"><a href="https://www.linkedin.com/"><img style="width: 100%;" src="assets\images\footer\linkedin_in_logo_icon_145103.png" alt="no image"></a></div>
-                <div class="size"><a href="https://www.pinterest.com/"><img style="width: 100%;" src="assets\images\footer\Shape (2).png" alt="no image"></a></div>
+                <div class="size" *ngFor="let item of media_footer">
+                  <a href="{{item.href}}" target="{{item.target}}">
+                    <img style="width: 100%;" src="{{item.src}}" alt="{{item.alt}}">
+                  </a>
+                </div>
             </div>
         </div>
     </div>

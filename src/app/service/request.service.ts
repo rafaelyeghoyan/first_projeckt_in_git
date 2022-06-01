@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
 export class RequestService {
   data = [];
   constructor(public request:HttpClient) { }
-  getData(url:string){
+  getData (url:string) {
     return this.request.get(url);
   }
 }

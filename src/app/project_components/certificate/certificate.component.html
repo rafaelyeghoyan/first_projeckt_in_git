@@ -1,0 +1,22 @@
+<app-header></app-header>
+<section class="certificate">
+  <div class="container">
+    <h2>{{cetificateTitle.title}}<span>{{cetificateTitle.subtitle}}</span>
+    </h2>
+    <div class="block">
+      <div class="child" *ngFor="let item of data">
+        <img src="{{item.src}}" alt="No image">
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="pages">
+      <p class="change_page">{{num}}</p>
+      <span></span>
+      <p class="fixed_page">05</p>
+      </div>
+      <button [disabled]="bool_1" (click) ="click_prev()" class="prev">&#8592;</button>
+      <button [disabled]="bool_2" (click) ="click_next()" class="next">&#8594;</button>
+  </div>
+  </div>
+</section>
+<app-footer></app-footer>

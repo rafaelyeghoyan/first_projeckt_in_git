@@ -1,38 +1,197 @@
 {
-  "sertificat": [
+  "header_logo":{
+    "src":"assets/images/header/Group 11.png",
+    "alt":"no image"
+  },
+  "header": [
     {
-      "title": "",
-      "subtitle": "",
-      "images": [
-        {
+      "id": 1,
+      "text": "ГЛАВНАЯ",
+      "routerlink": "/home"
+    },
+    {
+      "id": 2,
+      "text": "ГАЛЕРЕЯ",
+      "routerlink": "/gallery"
+    },
+    {
+      "id": 3,
+      "text": "ПРОЕКТЫ",
+      "routerlink": "/project"
+    },
+    {
+      "id": 4,
+      "text": "СЕРТИФИКАТЫ",
+      "routerlink": "/certificate"
+    },
+    {
+      "id": 5,
+      "text": "КОНТАКТЫ",
+      "routerlink": "/contacts"
+    }
+  ],
+  "footer": [
+    {
+      "id":1,
+      "routerlink": "/home",
+      "a_text": "ГЛАВНАЯ"
+    },
+    {
+      "id": 2,
+      "a_text": "ГАЛЕРЕЯ",
+      "routerlink": "/gallery"
+    },
+    {
+      "id": 3,
+      "a_text": "ПРОЕКТЫ",
+      "routerlink": "/project"
+    },
+    {
+      "id": 4,
+      "a_text": "СЕРТИФИКАТЫ",
+      "routerlink": "/certificate"
+    },
+    {
+      "id": 5,
+      "a_text": "КОНТАКТЫ",
+      "routerlink": "/contacts"
+    }
+  ],
+  "footer_logo": {
+    "routerlink": "/home",
+    "src":"assets/images/footer/Group 11 1.png",
+    "alt":"no image"
+  },
+  "contact_footer": {
+    "map_img": "assets/images/footer/Vector.png",
+    "map_text": "100000, Республика  Казахстан,  г. Караганда, ул. Телевизионная 10",
+    "map_href": "https://www.google.com/maps",
+    "phone_img": "assets/images/footer/Vector (1).png",
+    "phone_text": "+7 (701) 77 76 811",
+    "email_img": "assets/images/footer/Vector (2).png",
+    "email_text": "Galym.sultanov@mail.ru",
+    "email_href": "mailto:Galym.sultanov@mail.ru",
+    "alt":"no image",
+    "target": "_blank"
+  },
+  "media_footer": [
+    {
+      "id":1,
+      "src": "assets/images/footer/Shape.png",
+      "alt":"no image",
+      "href": "https://www.facebook.com/",
+      "target":"_blank"
+    },
+    {
+      "id":2,
+      "src": "assets/images/footer/Shape (1).png",
+      "alt":"no image",
+      "href": "https://twitter.com/",
+      "target":"_blank"
+    },
+    {
+      "id":3,
+      "src": "assets/images/footer/Linked In.png",
+      "alt":"no image",
+      "href": "https://www.linkedin.com/",
+      "target":"_blank"
+    },
+    {
+      "id":3,
+      "src": "assets/images/footer/Shape (2).png",
+      "alt":"no image",
+      "href": "https://www.pinterest.com/",
+      "target":"_blank"
+    }
+  ],
+  "certificate_icon": [
+       [ {
           "id": 1,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+          "alt": ""
         },
         {
           "id": 2,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+          "alt": ""
         },
         {
           "id": 3,
-          "url": ""
+          "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+          "alt": ""
         }
-      ]
-    }
+       ],
+    [ {
+      "id": 4,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 5,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 6,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 7,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 8,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 9,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 10,
+      "src":"assets/images/certificate/photo_2019-05-23_19-46-09.png",
+      "alt": ""
+    },
+      {
+        "id": 11,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      },
+      {
+        "id": 12,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+        "alt": ""
+      }
+    ],
+    [ {
+      "id": 13,
+      "src": "assets/images/certificate/photo_2019-05-23_19-46-10-800x1067.png",
+      "alt": ""
+    },
+      {
+        "id": 14,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-09.png",
+        "alt": ""
+      },
+      {
+        "id": 15,
+        "src": "assets/images/certificate/photo_2019-05-23_19-46-11-800x1067.png",
+        "alt": ""
+      }
+    ]
   ],
-  "contact": [
-    {
-      "title": "",
-      "subtitle": "",
-      "text": [
-        {
-          "addres": "",
-          "numberphone": "",
-          "mail": ""
-        }
-      ],
-      "map": ""
+  "certificate": {
+      "id": 1,
+      "title": "Сертификаты",
+      "subtitle": "КОМПАНИИ"
     }
-  ],
+  ,
   "project": [
     {
       "id": 1,
@@ -40,7 +199,7 @@
       "title" : "Общеобразовательная школа",
       "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "link" : "СМОТРЕТЬ",
-      "rout": "/inproecks",
+      "rout": "/inproject",
       "vector": "/assets/JorImages/imagesJorVector.png"
     },
     {
@@ -49,7 +208,7 @@
       "title" : "Паркинг на 500 автомобилей",
       "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "link" : "СМОТРЕТЬ",
-      "rout": "/inproecks",
+      "rout": "/inproject",
       "vector": "/assets/JorImages/imagesJorVector.png"
     },
     {
@@ -58,7 +217,7 @@
       "title" : "Проект интерьера офиса",
       "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "link" : "СМОТРЕТЬ",
-      "rout": "/inproecks",
+      "rout": "/inproject",
       "vector": "/assets/JorImages/imagesJorVector.png"
     }
   ],

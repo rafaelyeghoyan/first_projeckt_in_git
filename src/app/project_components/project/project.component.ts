@@ -3,15 +3,16 @@ import {RequestService} from "../../service/request.service";
 import {environment} from "../../../environments/environment.prod";
 
 @Component({
-  selector: 'app-proekts',
-  templateUrl: './proekts.component.html',
-  styleUrls: ['./proekts.component.css']
+  selector: 'app-project',
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.css']
 })
-export class ProektsComponent implements OnInit {
+export class ProjectComponent implements OnInit {
 
   constructor(public request: RequestService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
     this.getRequest()
   }
   data: any[] = []

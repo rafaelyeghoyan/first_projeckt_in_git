@@ -4,41 +4,47 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GlavnayaComponent } from './project_components/glavnaya/glavnaya.component';
-import { GaleriaComponent } from './project_components/galeria/galeria.component';
-import { ProektsComponent } from './project_components/proekts/proekts.component';
-import { InproektsComponent } from './project_components/inproekts/inproekts.component';
-import { SercevikatiComponent } from './project_components/sercevikati/sercevikati.component';
+import { HomeComponent } from './project_components/home/home.component';
+import { GalleryComponent } from './project_components/gallery/gallery.component';
+import { ProjectComponent } from './project_components/project/project.component';
+import { InprojectComponent } from './project_components/inproject/inproject.component';
+import { CertificateComponent } from './project_components/certificate/certificate.component';
 import { ContactsComponent } from './project_components/contacts/contacts.component';
 import { NotfoundComponent } from './project_components/notfound/notfound.component';
 import { Routes, RouterModule } from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { HttpComponent } from './project_components/http/http.component';
+import { LowerUpperCasePipe } from './pipes/lower-upper-case.pipe';
+
+
+
+
+
 const Routing: Routes = [
   {
     path: '',
-    component: GlavnayaComponent
+    component: HomeComponent
   },
   {
-    path: 'glavnaya',
-    component: GlavnayaComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path: 'galeria',
-    component: GaleriaComponent
+    path: 'gallery',
+    component: GalleryComponent
   },
   {
-    path: 'proekts',
-    component: ProektsComponent
+    path: 'project',
+    component: ProjectComponent
   },
   {
-    path: 'inproecks',
-    component: InproektsComponent
+    path: 'inproject',
+    component: InprojectComponent
   },
   {
-    path: 'sercevikati',
-    component: SercevikatiComponent
+    path: 'certificate',
+    component: CertificateComponent
   },
   {
     path: 'contacts',
@@ -60,14 +66,15 @@ const Routing: Routes = [
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    GlavnayaComponent,
-    GaleriaComponent,
-    ProektsComponent,
-    InproektsComponent,
-    SercevikatiComponent,
+    HomeComponent,
+    GalleryComponent,
+    ProjectComponent,
+    InprojectComponent,
+    CertificateComponent,
     ContactsComponent,
     NotfoundComponent,
-    HttpComponent
+    HttpComponent,
+    LowerUpperCasePipe
   ],
   imports: [
     BrowserModule,

@@ -1,47 +1,51 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 .container{
-  width: 1200px;
+  width: 1360px;
   margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 50px;
 }
-h2{
+.text_part h3{
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 300;
   font-size: 64px;
   line-height: 64px;
   color: #BDBDBD;
-  margin-bottom: 32px;
-  padding-top: 25px;
+  margin: 0;
 }
-h2 span{
-  display: block;
+.text_part h2{
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
-  color: #333333
+  color: #333333;
+  margin: 0 0 34px 0;
 }
-p{
+.contact_text .addres_text {
   font-family: 'TT Hoves';
-  font-style: normal;
   font-size: 18px;
   line-height: 22px;
-  margin-bottom: 52px;
+  margin: 0 0 43px 0;
+  color: #333333;
 }
-p span{
-  display: block;
+.contact_text .phonenumber{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 52px 0;
+  color: #333333;
 }
-.block + p{
-  margin-top: 32px;
+.contact_text .contact_mail{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 32px 0;
+  color: #333333;
 }
-button{
+button.contact_button{
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 400;
@@ -54,58 +58,84 @@ button{
   padding: 30px 43px;
   cursor: pointer;
 }
-.map_block{
-  margin-left: 34px;
-  margin-bottom: 120px;
-  width: 56%;
-  height: 453px;
+.text_part{
+  margin-right: 8%;
 }
-.map_block img{
+.img_part{
+  width: 65%;
+  height: 501px;
+}
+.img_part img{
   display: block;
   width: 100%;
   height: 100%;
+  padding-bottom: 120px;
 }
-.main{
-  display: none;
-  background-color: #fffdfdc7;
-  position: fixed;
+.section_parts{
+  display: flex;
+  justify-content: space-between;
+}
+.hidden_block {
+  width: 469px;
+  height: 590px;
+  padding: 26px 39px;
+  position: absolute;
+  background: #ffffff;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
+  margin: auto;
 }
-.taknvac{
+.content_block{
+  width: 100%;
 
 }
-.center_block{
-  width: 500px;
-  position: absolute;
-  margin: auto;
-  right: 0;
-  top: 10px;
-  left: 0;
-  background-color: white;
-  bottom: 0;
+.content_block .title{
+  display: flex;
+  justify-content: flex-end;
 }
-.text_block{
+.content_block h4{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  margin: 0 0 24px 0;
   text-align: center;
-  width: 480px;
-  margin: auto;
+  color: #333333;
+  padding-right: 98px;
+  display: inline-block;
 }
-.text_block h2{
+.content_block h4 + span{
+  color: #C1C1C1;
+  font-weight: 100;
+  font-size: 25px;
+  cursor: pointer;
+}
+form input{
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 391px;
+  height: 46px;
+  font-size: 20px;
+}
+textarea{
+  width: 391px;
+  height: 147px;
+  resize: none;
+}
+.checkbox_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .checkbox_block input[type="checkbox"]{
+  height: 23px;
+  width: 24px;
   margin: 0;
-  font-size: 32px;
 }
-.text_block input[type="text"],.text_block textarea,.text_block input[type="tel"],.text_block input[type="email"]{
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  background: #F3F3F3;
-  border: none;
-  outline: none;
-}
-input::placeholder,textarea::placeholder{
-  padding-left: 21px;
+form input::placeholder{
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 400;
@@ -113,87 +143,134 @@ input::placeholder,textarea::placeholder{
   line-height: 17px;
   letter-spacing: 0.04em;
   color: #8D8D8D;
+  padding: 15px 341px 14px 21px;
 }
-textarea::placeholder{
-  padding-top: 14px;
-}
-textarea{
-  resize: none;
-}
-button:disabled{
-  opacity: 40%;
-}
-input[type="checkbox"]{
-  height: 24px;
-  width: 24px;
-  accent-color: black;
-}
-.marg{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 25px;
+form textarea::placeholder{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8D8D8D;
   padding-top: 15px;
+  padding-left: 21px;
 }
-.marg label{
-  width: 85%;
+form .checkbox_block input[type="checkbox"] + label{
+  font-family: 'TT Hoves';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #333333;
   display: inline-block;
-  text-align: left;
-  margin-left: 25px;
+  width: 360px;
+  margin-top: 5px;
 }
-.text_block textarea {
-  height:150px;
+form button{
+  display: inline-block;
+  width: 391px;
+  height: 42px;
+  background: #333333;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 150px;
+  margin-top: 40px;
 }
-.text_block h2 + span{
+.thanks_block .content_block span{
   display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 32px;
-  color: red;
+  text-align: right;
+  color: #C1C1C1;
+  font-weight: 100;
+  font-size: 25px;
   cursor: pointer;
 }
-.text_block button{
+.thanks_block .content_block .img_block{
+  height: 226px;
+  width: 226px;
+  margin: auto;
+}
+.thanks_block .content_block .img_block img{
+  display: block;
   width: 100%;
-  background-color: #333333;
-  color: white;
-  padding: 24px 32px;
-  font-size: 25px;
 }
-.thanks_block{
-  display: none;
-}
-.text_block h2{
+.thanks_block .content_block h5{
+  margin: 0;
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #333333;
+  width: 100%;
+  text-align: center;
 }
-.text_block p{
+.thanks_block .content_block p{
+  margin: 0;
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #4F4F4F;
 }
+.thanks_block .content_block button{
+  display: inline-block;
+  padding: 15px 125px;
+  background: #333333;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 391px;
+  height: 42px;
+  cursor: pointer;
+}
+.thanks_block {
+  display: none;
+}
+.form_block{
+  display: none;
+}
+.hidden_block{
+  display: none;
+}
+button:disabled{
+  background: rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 1360px) {
+  .container{
+    width: 1200px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .container{
     width: 1000px;
   }
-}
-@media screen and (max-width: 1080px) {
-  .container{
-    width: 800px;
+  .img_part{
+    width: 43%;
   }
-  .map_block{
-    width: 46%;
+}
+@media screen and (max-width: 1085px) {
+  .container{
+    width: 880px;
+    margin: auto;
+  }
+  .text_part{
+    margin: 0;
   }
 }
 @media screen and (max-width: 880px) {
@@ -201,8 +278,12 @@ input[type="checkbox"]{
     width: 95%;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 120px;
   }
-  .map_block{
+  .section_parts{
+    flex-direction: column-reverse;
+  }
+  .img_part{
     width: 100%;
     margin-top: 25px;
     margin-left: 0;
@@ -212,5 +293,68 @@ input[type="checkbox"]{
   }
   h2 span{
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 500px){
+  .text_part h3{
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .text_part h2{
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content_block {
+    width: 315px;
+    margin: auto;
+  }
+
+  form input, form textarea {
+    width: 315px;
+  }
+
+  form .checkbox_block input[type="checkbox"] + label {
+    width: 270px;
+  }
+
+  form button,.thanks_block .content_block button{
+    width: 315px;
+    padding: 0;
+  }
+  .hidden_block{
+    width: 350px;
+    padding: 5px 0 0 0;
+  }
+}
+@media screen and (max-width: 360px){
+  .hidden_block{
+    width: 300px;
+  }
+  .content_block {
+    width: 290px;
+  }
+
+  form input, form textarea {
+    width: 290px;
+  }
+
+  form .checkbox_block input[type="checkbox"] + label {
+    width: 200px;
+  }
+
+  form button,.thanks_block .content_block button{
+    width: 290px;
+  }
+}
+@media screen and (max-width: 350px){
+  .text_part h3{
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .text_part h2{
+    font-size: 35px;
+    line-height: 35px;
   }
 }

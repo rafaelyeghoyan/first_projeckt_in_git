@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-galeria',
-  templateUrl: './galeria.component.html',
-  styleUrls: ['./galeria.component.css']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
-export class GaleriaComponent implements OnInit {
+export class GalleryComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
   bool_1:any = true;
@@ -21,8 +22,6 @@ export class GaleriaComponent implements OnInit {
     this.bool_1 = false;
     this.num = '0';
     if(this.i >= 5) {
-      // this.i = 1;
-      // this.bool_1 = false;
       this.bool_2= true;
     }
     this.num += this.i ;
@@ -33,7 +32,6 @@ export class GaleriaComponent implements OnInit {
     this.bool_2= false;
     this.num = '0';
     if(this.i <= 1) {
-      // this.i = 0;
       this.bool_1 = true;
     }
     this.num += this.i;
