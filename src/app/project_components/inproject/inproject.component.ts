@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RequestService} from "../../service/request.service";
 import {environment} from "../../../environments/environment.prod";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-inproject',
@@ -9,7 +10,7 @@ import {environment} from "../../../environments/environment.prod";
 })
 export class InprojectComponent implements OnInit {
 
-  constructor(public request: RequestService) { }
+  constructor(public request: RequestService, public activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     window.scrollTo(0,0)

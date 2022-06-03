@@ -38,6 +38,7 @@ export class CertificateComponent implements OnInit {
   constructor(public request:RequestService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
     this.getCertificateIcon()
     this.getCertificateTitle ()
   }

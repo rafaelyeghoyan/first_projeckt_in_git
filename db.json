@@ -104,8 +104,105 @@
       "target":"_blank"
     }
   ],
-  "gallery": [
+  "home_title": [
+      {
+        "id":1,
+        "title": "NURTOWN",
+        "src": "assets/images/home/Rectangle 6.png",
+        "alt": "no image",
+        "routerLink": "/gallery",
+        "button": "ВЗГЛЯНУТЬ"
+      },
+      {
+        "id":2,
+        "title": "NURCITY",
+        "src": "assets/images/home/Burj_Al_Arab_.jpg",
+        "alt": "no image",
+        "routerLink": "/gallery",
+        "button": "ВЗГЛЯНУТЬ"
+      }
+  ],
+  "home_company_img_1": [
     {
+      "id":1,
+      "src":"assets/images/home/Rectangle 8.png",
+      "alt":"no image"
+    },
+    {
+      "id":2,
+      "src":"assets/images/home/Rectangle 10.png",
+      "alt":"no image"
+    }
+  ],
+  "home_company_img_2": {
+    "id":1,
+    "src": "assets/images/home/Rectangle 9.png",
+    "alt":"no image"
+  },
+  "home_company_text": {
+    "title": "О компании",
+    "button": "ЧИТАТЬ",
+    "routerLink": "/certificate",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  "home_zadacha": [
+    {
+      "id":1,
+      "src": "assets/images/home/1.png",
+      "alt":"no image",
+      "text": "Создание комфортных условий и повышение качества обслуживания клиентов"
+    },
+    {
+      "id":2,
+      "src": "assets/images/home/2.png",
+      "alt":"no image",
+      "text": "Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке"
+    }
+  ],
+  "home_project": [
+    {
+      "id":1,
+      "src": "assets/images/home/Rectangle 12.png",
+      "alt":"no image",
+      "text": "ДОСУГОВЫЙ ЦЕНТР",
+      "button": "ПОДРОБНЕЕ",
+      "routerLink": "/project/inproject"
+    },
+    {
+      "id":2,
+      "src": "assets/images/home/image 15.png",
+      "alt":"no image",
+      "text": "ДОСУГОВЫЙ ЦЕНТР",
+      "button": "ПОДРОБНЕЕ",
+      "routerLink": "/project/inproject"
+    },
+    {
+      "id":3,
+      "src": "assets/images/home/image 16.png",
+      "alt":"no image",
+      "text": "ДОСУГОВЫЙ ЦЕНТР",
+      "button": "ПОДРОБНЕЕ",
+      "routerLink": "/project/inproject"
+    },
+    {
+      "id":4 ,
+      "src": "assets/images/home/image 17.png",
+      "alt":"no image",
+      "text": "ДОСУГОВЫЙ ЦЕНТР",
+      "button": "ПОДРОБНЕЕ",
+      "routerLink": "/project/inproject"
+    },
+    {
+      "id":5,
+      "src": "assets/images/home/image 18.png",
+      "alt":"no image",
+      "text": "ДОСУГОВЫЙ ЦЕНТР",
+      "button": "ПОДРОБНЕЕ",
+      "routerLink": "/project/inproject"
+    }
+  ],
+  "gallery": [
+    [{
       "id":1,
       "src": "assets/images/galleria/image19.png",
       "alt": "no image",
@@ -164,7 +261,247 @@
       "src": "assets/images/galleria/Rectangle31.png",
       "alt": "no image",
       "p": "Описание или пояснение к изображению."
-    }
+    }],
+    [{
+      "id":11,
+      "src": "assets/images/galleria/image19.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":12,
+      "src": "assets/images/galleria/Rectangle23.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":13,
+      "src": "assets/images/galleria/Rectangle24.png",
+      "alt":  "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":14,
+      "src": "assets/images/galleria/Rectangle25.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+     " id":15,
+      "src": "assets/images/galleria/Rectangle26.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":16,
+      "src": "assets/images/galleria/Rectangle27.png",
+     " alt": "no image",
+     "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":17,
+      "src": "assets/images/galleria/Rectangle30.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":18,
+      "src": "assets/images/galleria/Rectangle31.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":19,
+      "src": "assets/images/galleria/Rectangle28.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":20,
+      "src": "assets/images/galleria/Rectangle29.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    }],
+    [{
+      "id":21,
+      "src": "assets/images/galleria/Rectangle23.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":22,
+      "src": "assets/images/galleria/image19.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":23,
+      "src": "assets/images/galleria/Rectangle24.png",
+      "alt":  "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":24,
+      "src": "assets/images/galleria/Rectangle25.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+     " id":25,
+      "src": "assets/images/galleria/Rectangle26.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":26,
+      "src": "assets/images/galleria/Rectangle27.png",
+     " alt": "no image",
+     "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":27,
+      "src": "assets/images/galleria/Rectangle28.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":28,
+      "src": "assets/images/galleria/Rectangle29.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":29,
+      "src": "assets/images/galleria/Rectangle30.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":30,
+      "src": "assets/images/galleria/Rectangle31.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    }],
+    [{
+      "id":31,
+      "src": "assets/images/galleria/image19.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":32,
+      "src": "assets/images/galleria/Rectangle25.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":33, 
+      "src": "assets/images/galleria/Rectangle26.png",
+      "alt":  "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":34,
+      "src": "assets/images/galleria/Rectangle23.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+     " id":35,
+      "src":"assets/images/galleria/Rectangle24.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":36,
+      "src": "assets/images/galleria/Rectangle27.png",
+     " alt": "no image",
+     "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":37,
+      "src": "assets/images/galleria/Rectangle28.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":38,
+      "src": "assets/images/galleria/Rectangle29.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":39,
+      "src": "assets/images/galleria/Rectangle30.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":40,
+      "src": "assets/images/galleria/Rectangle31.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    }],
+    [{
+      "id":41,
+      "src": "assets/images/galleria/image19.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":42,
+      "src": "assets/images/galleria/Rectangle24.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":43,
+      "src": "assets/images/galleria/Rectangle23.png",
+      "alt":  "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":44,
+      "src": "assets/images/galleria/Rectangle25.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+     " id":45,
+      "src": "assets/images/galleria/Rectangle31.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":46,
+      "src": "assets/images/galleria/Rectangle27.png",
+     " alt": "no image",
+     "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":47,
+      "src": "assets/images/galleria/Rectangle30.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":48,
+      "src": "assets/images/galleria/Rectangle29.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":49,
+      "src": "assets/images/galleria/Rectangle28.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    },
+    {
+      "id":50,
+      "src": "assets/images/galleria/Rectangle26.png",
+      "alt": "no image",
+      "p": "Описание или пояснение к изображению."
+    }]
   ],
   "certificate_icon": [
        [ {

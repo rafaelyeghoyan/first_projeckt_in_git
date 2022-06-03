@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,  Validators } from '@angular/forms';
+import { RequestService } from 'src/app/service/request.service';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-home',
@@ -8,34 +10,88 @@ import { FormBuilder,  Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public fb:FormBuilder) { }
+  constructor(public fb:FormBuilder, public request: RequestService) { }
 
   ngOnInit(): void {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.getTitel();
+    this.getZadacha();
+    this.getProject();
+    this.getCompany_text();
+    this.getCompany_img_1();
+    this.getConmpany_img_2();
   }
 
   bool_1:any = true;
   bool_2:any = false;
-  i:any = 0;
+  i:any = 1;
   num:any = '01';
+  num_end:any 
   click_next() {
     this.i++
-    if(this.i == 1) {
-      this.i = 0;
-      this.bool_1 = false;
+    this.bool_1 = false;
+    this.num = '0';
+    if(this.i >= this.num_end) {
       this.bool_2= true;
-    }   
-    this.num = '02';
+    }
+    this.num += this.i;
+    this.getTitel();
   }
 
   click_prev() {
-    this.i--
-    if(this.i == -1) {
-      this.i = 0;
+    this.i--;
+    this.bool_2= false;
+    this.num = '0';
+    if(this.i <= 1) {
       this.bool_1 = true;
-      this.bool_2= false;
-    }  
-    this.num = '01' 
+    }
+    this.num += this.i;
+    this.getTitel();
+  }
+
+  title_data: any = [];
+  zadacha_data: any [] = [];
+  project_data: any [] = [];
+  company_text:any = [];
+  company_img_1:any[] = [];
+  company_img_2:any = [];
+
+  getTitel(){
+    let ind = this.i;
+    this.request.getData(`${environment.http.get_home_title}`).subscribe((res: any) => {
+      this.num_end = res.length;
+      if(this.num_end < 10){
+        this.num_end = "0" + this.num_end;
+      }
+      if(res[ind-1].id == ind){
+        this.title_data = res[ind-1];
+      }
+    })
+  }
+  getZadacha(){
+    this.request.getData(`${environment.http.get_home_zadacha}`).subscribe((res:any) => {
+      this.zadacha_data = res;
+    })
+  }
+  getProject(){
+    this.request.getData(`${environment.http.get_home_project}`).subscribe((res:any) => {
+      this.project_data = res;
+    })
+  }
+  getCompany_text(){
+    this.request.getData(`${environment.http.get_home_company_text}`).subscribe((res:any) => {
+      this.company_text = res;
+    })
+  }
+  getCompany_img_1(){
+    this.request.getData(`${environment.http.get_home_company_img_1}`).subscribe((res:any) => {
+      this.company_img_1 = res;
+    })
+  }
+  getConmpany_img_2(){
+    this.request.getData(`${environment.http.get_home_company_img_2}`).subscribe((res:any) => {
+      this.company_img_2 = res;
+    })
   }
 
   form = this.fb.group({
@@ -48,5 +104,8 @@ export class HomeComponent implements OnInit {
   submit(){
     this.form.reset();
   }
+
+
+
 
 }
