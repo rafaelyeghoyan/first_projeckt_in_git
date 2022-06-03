@@ -39,9 +39,13 @@ const Routing: Routes = [
     component: ProjectComponent
   },
   {
-    path: 'inproject',
+    path: 'project/:name',
     component: InprojectComponent
   },
+  // {
+  //   path: 'inproject',
+  //   component: InprojectComponent
+  // },
   {
     path: 'certificate',
     component: CertificateComponent

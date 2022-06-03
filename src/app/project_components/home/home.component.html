@@ -4,7 +4,7 @@
         <div class="flex_for_text_img">
             <div class="text_titel">
                 <h3>PROJECT</h3>
-                <h2>NURTOWN</h2>
+                <h2>{{title_data.title}}</h2>
                 <div class="buttons">
                     <button [disabled]="bool_1" (click) ="click_prev()" class="prev">&#8592;</button>
                     <button [disabled]="bool_2" (click) ="click_next()" class="next">&#8594;</button>
@@ -12,57 +12,40 @@
                 <div class="pages">
                     <p class="change_page">{{num}}</p>
                     <span></span>
-                    <p class="fixed_page">02</p>
+                    <p class="fixed_page">{{num_end}}</p>
                 </div>
             </div>
             <div class="text_img">
-                <img style="width: 100%" src="assets\images\home\Rectangle 6.png" alt="no image">
-                <button routerLink="/gallery" class="button_in_img">ВЗГЛЯНУТЬ <span>&#8594;</span></button>
+                <img src="{{title_data.src}}" alt="{{title_data.alt}}">
+                <button routerLink="{{title_data.routerLink}}" class="button_in_img">{{title_data.button}} <span>&#8594;</span></button>
             </div>
         </div>
         <div class="about_company">
             <div class="img_company">
                 <div class="img_part_1">
-                    <div class="img_up">
-                        <img style="width: 100%; height: 100%;" src="assets\images\home\Rectangle 8.png" alt="no image">
-                    </div>
-                    <div class="img_down">
-                        <img style="width: 100%; height: 100%;" src="assets\images\home\Rectangle 10.png" alt="no image">
+                    <div *ngFor="let item of company_img_1">
+                        <img src="{{item.src}}" alt="{{item.alt}}">
                     </div>
                 </div>
                 <div class="img_part_2">
-                    <img style="width: 100%; height: 100%;" src="assets\images\home\Rectangle 9.png" alt="no image">
+                    <img src="{{company_img_2.src}}" alt="{{company_img_2.alt}}">
                 </div>
             </div>
             <div class="text_company">
-                <h2>О компании</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged.
-                </p>
-                <button routerLink="/certificate">ЧИТАТЬ <span>&#8594;</span></button>
+                <h2>{{company_text.title}}</h2>
+                <p>{{company_text.text}}</p>
+                <button routerLink="{{company_text.routerLink}}">{{company_text.button}}<span>&#8594;</span></button>
             </div>
         </div>
         <div class="zadacha">
             <h2>Основные задачи</h2>
-            <div>
-                <div class="zadacha_1">
-                    <div class="zadacha_1_img">
-                        <img style="width: 100%;" src="assets\images\home\1.png" alt="no image">
+            <div class="child">
+                <div *ngFor="let item of zadacha_data">
+                    <div class="zadacha_img">
+                        <img src="{{item.src}}" alt="{{item.alt}}">
                     </div>
-                    <div class="zadacha_1_text">
-                        <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
-                    </div>
-                </div>
-                <div class="zadacha_2">
-                    <div class="zadacha_2_img">
-                        <img style="width: 100%;" src="assets\images\home\2.png" alt="no image">
-                    </div>
-                    <div class="zadacha_2_text">
-                        <p>Постоянно совершенствовать качество предоставляемых услуг 
-                    путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+                    <div class="zadacha_text">
+                        <p>{{item.text}}</p>
                     </div>
                 </div>
             </div>
@@ -70,45 +53,11 @@
         <div class="proects">
             <h2>Наши проекты</h2>
             <div class="img">
-                <div class="proects_img_part">
-                        <div class="part_1_photos  div_hover">
-                            <img style="width: 100%; height: 100%;" src="assets\images\home\Rectangle 12.png" alt="no image">
-                            <div class="part_1_hover">
-                                <p>ДОСУГОВЫЙ ЦЕНТР</p>
-                                <button routerLink="/inproject">ПОДРОБНЕЕ<span>&#8594;</span></button>
-                            </div>
-                        </div>
-                        <div class="part_1_photos  div_hover">
-                            <img style="width: 100%; height: 100%;" src="assets\images\home\image 15.png" alt="no image">
-                            <div class="part_1_hover">
-                                <p>ДОСУГОВЫЙ ЦЕНТР</p>
-                                <button routerLink="/inproject">ПОДРОБНЕЕ<span>&#8594;</span></button>
-                            </div>
-                        </div>
-                    
-                </div>
-                <div class="proects_img_part">
-                        <div class="part_2_photo_1  div_hover">
-                            <img style="width: 100%; height: 100%;" src="assets\images\home\image 16.png" alt="no image">
-                            <div class="part_1_hover">
-                                <p>ДОСУГОВЫЙ ЦЕНТР</p>
-                                <button routerLink="/inproject">ПОДРОБНЕЕ<span>&#8594;</span></button>
-                            </div>
-                        </div>
-                        <div class="part_2_photo_2  div_hover">
-                            <img style="width: 100%; height: 100%;" src="assets\images\home\image 17.png" alt="no image">
-                            <div class="part_1_hover">
-                                <p>ДОСУГОВЫЙ ЦЕНТР</p>
-                                <button routerLink="/inproject">ПОДРОБНЕЕ<span>&#8594;</span></button>
-                            </div>
-                        </div>
-                        <div class="part_2_photo_3  div_hover">
-                            <img style="width: 100%; height: 100%;" src="assets\images\home\image 18.png" alt="no image">
-                            <div class="part_1_hover">
-                                <p>ДОСУГОВЫЙ ЦЕНТР</p>
-                                <button routerLink="/inproject">ПОДРОБНЕЕ<span>&#8594;</span></button>
-                            </div>
-                        </div>
+                <div *ngFor="let item of project_data" class="img_hover"><img src="{{item.src}}" alt="{{item.alt}}">
+                    <div class="p_hover">
+                        <p>{{item.text}}</p>
+                        <button [routerLink]="[item.routerLink]">{{item.button}}<span>&#8594;</span></button>
+                    </div>
                 </div>
             </div>
             <div class="all_proects">
@@ -120,30 +69,43 @@
             <div>
                 <div class="contact_form">
                     <form [formGroup]="form" (ngSubmit)="submit()">
-                        <input class="input" formControlName="firstname" type="text" placeholder="Имя" name="firstname">
-                        <input class="input" formControlName="phonenumber" type="tel" placeholder="Номер телефона" name="phonenumber">
-                        <p class="message" *ngIf="form.get('phonenumber')?.hasError('required') && (form.get('phonenumber')?.dirty || form.get('phonenumber')?.touched)">
-                            The phone number is required</p>
-                        <p class="message" *ngIf="form.get('phonenumber')?.hasError('pattern')">
-                            The phone number is must be only by number</p>
-                        <input class="input" formControlName="email" type="text" placeholder="E-mail" name="email">
-                        <p class="message" *ngIf="form.get('email')?.hasError('required') && (form.get('email')?.dirty || form.get('email')?.touched)">
-                            The E-mail is required</p>
-                        <p class="message" *ngIf="form.get('email')?.hasError('pattern')">
-                            The E-mail is must be written example test@gmail.com</p>
-                        <input class="input" formControlName="product" type="text" placeholder="Интересующий товар/услуга" name="product">
-                        <textarea name="comment" formControlName="comment" placeholder="Сообщение" rows="9"></textarea>
-                        <p class="message" *ngIf="form.get('comment')?.hasError('required') && (form.get('comment')?.dirty || form.get('comment')?.touched)">
-                            The Comment is required</p>
+                        <label>
+                            <input class="input" formControlName="firstname" type="text" placeholder="Имя" name="firstname">
+                        </label>
+                        <label>
+                            <input class="input" formControlName="phonenumber" type="tel" placeholder="Номер телефона" name="phonenumber">
+                            <p class="message" *ngIf="form.get('phonenumber')?.hasError('required') && (form.get('phonenumber')?.dirty || form.get('phonenumber')?.touched)">
+                                The phone number is required</p>
+                            <p class="message" *ngIf="form.get('phonenumber')?.hasError('pattern')">
+                                The phone number is must be only by number</p>
+                                <span *ngIf="form.get('phonenumber')?.hasError('required')" style="left: 130px;" class="message_symbol">*</span>
+                        </label>
+                        <label>
+                           <input class="input" formControlName="email" type="text" placeholder="E-mail" name="email">
+                            <p class="message" *ngIf="form.get('email')?.hasError('required') && (form.get('email')?.dirty || form.get('email')?.touched)">
+                                The E-mail is required</p>
+                            <p class="message" *ngIf="form.get('email')?.hasError('pattern')">
+                                The E-mail is must be written example test@gmail.com</p>
+                                <span *ngIf="form.get('email')?.hasError('required')" style="left: 62px;" class="message_symbol">*</span>
+                        </label>
+                        <label>
+                            <input class="input" formControlName="product" type="text" placeholder="Интересующий товар/услуга" name="product">
+                        </label>
+                        <label>
+                            <textarea name="comment" formControlName="comment" placeholder="Сообщение" rows="9"></textarea>
+                            <p class="message" *ngIf="form.get('comment')?.hasError('required') && (form.get('comment')?.dirty || form.get('comment')?.touched)">
+                                The Comment is required</p>
+                                <span *ngIf="form.get('comment')?.hasError('required')" style="left: 90px;" class="message_symbol">*</span>
+                        </label>
                         <label>
                             <input style="position: absolute;" type="checkbox" name="agree">
-                            <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                            <p class="input_text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
                         </label>
                         <button [disabled]="form.invalid">ОТПРАВИТЬ<span>&#8594;</span></button>
                     </form>
                 </div>
                 <div class="contact_img">
-                    <img style="width: 100%; height: 100%;" src="assets\images\home\image 12.png" alt="no image">
+                    <img src="assets/images/home/image 12.png" alt="no image">
                 </div>
             </div>
         </div>

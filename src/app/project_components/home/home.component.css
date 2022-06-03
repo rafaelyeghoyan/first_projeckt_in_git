@@ -2,6 +2,10 @@
     width: 1170px;
     margin: auto;
 }
+img {
+    width: 100%;
+    height: 100%;
+}
 .flex_for_text_img {
     width: 100%;
     display: flex;
@@ -13,6 +17,7 @@
 }
 .text_img {
     width: 770px;
+    height: 830px;
     position: relative;
 }
 h3 {
@@ -73,7 +78,7 @@ span {
     width: 222px;
     height: 71px;
     left: 0px;
-    bottom: 4px;
+    bottom: 0px;
     border: none;
     background: #FFFFFF;
     font-family: 'TT Hoves';
@@ -109,13 +114,13 @@ span {
 .img_part_2 {
     width: 48%;
 }
-.img_up {
+.img_part_1 div:nth-child(1) {
     width: 100%;
     height: 265px;
     position: absolute;
     top: -30px;
 }
-.img_down {
+.img_part_1 div:nth-child(2) {
     width: 100%;
     height: 140px;
     position: absolute;
@@ -161,51 +166,36 @@ span {
     line-height: 64px;
     color: #BDBDBD;
 }
-.zadacha > div {
+.child {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
 }
-.zadacha_1 {
+.child div:nth-child(1) {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
-.zadacha_1_img {
-    width: 20%;
-}
-.zadacha_1_text {
-    width: 61%;
-}
-.zadacha_1_text > p {
-    font-family: 'TT Hoves';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 36px;
-    color: #333333;
-    margin: 0;
-}
-.zadacha_2 {
+.child div:nth-child(2)  {
     width: 49%;
     display: flex;
     justify-content: space-between;
 }
-.zadacha_2_img {
-    width: 20%;
+.zadacha_img {
+    width: 20% !important;
 }
-.zadacha_2_text {
-    width: 70%;
-}
-.zadacha_2_text > p {
+.child div p {
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 400;
-    margin: 0;
     font-size: 22px;
     line-height: 36px;
     color: #333333;
+    margin: 0;
+}
+.zadacha_text {
+    width: 70% !important;
 }
 .proects {
     width: 100%;
@@ -221,34 +211,50 @@ span {
 }
 .img {
     width: 100%;
-    padding-top: 60px;
-}
-.div_hover {
-    height: 250px;
-}
-.proects_img_part {
-    width: 100%;
-    margin-bottom: 30px;
+    padding: 60px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.part_1_photos {
+.img div:nth-child(1), .img div:nth-child(2){
     width: 49%;
+
+}
+.img div:nth-child(3) {
+    width: 22%;
+}
+.img div:nth-child(4) {
+    width: 44%;
+}
+.img div:nth-child(5) {
+    width: 30%;
+}
+.img_hover {
+    height: 250px;
+    margin-bottom: 30px;
     position: relative;
 }
-.part_1_hover {
-    width: 100%;
+.p_hover {
+    padding-left: 70px;
+    padding-top: 40px;
     background: #333333a3;
-    padding: 48px 79px;
     display: none;
+} 
+.img div:nth-child(5) > .p_hover, .img div:nth-child(3) > .p_hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
 }
-.div_hover:hover .part_1_hover {
+.img_hover:hover .p_hover {
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    word-break: break-word;
 }
-.part_1_hover > p {
+.p_hover > p {
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 700;
@@ -258,41 +264,7 @@ span {
     margin: 0;
     margin-bottom: 9px;
 }
-.part_2_photo_1, .part_2_photo_2, .part_2_photo_3 {
-    position: relative;
-}
-.part_2_photo_1 .part_1_hover {
-    width: 100%;
-    background: #333333a3;
-    padding: 60px 15px;
-} 
-.part_2_photo_2 .part_1_hover {
-    padding: 48px 50px;
-}
-.part_2_photo_3 .part_1_hover {
-    padding: 47px 45px;
-}
-.part_2_photo_1 .part_1_hover p {
-    font-family: 'TT Hoves';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 52px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-bottom: 9px;
-}
-.part_2_photo_3 .part_1_hover p {
-    font-family: 'TT Hoves';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 64px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-bottom: 9px;
-}
-.part_1_hover > button {
+.p_hover > button {
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 400;
@@ -304,18 +276,9 @@ span {
     background-color: #33333300;
     border: none;
 }
-.part_1_hover > button > span {
+.p_hover > button > span {
     border: none;
     margin-left: 15px;
-}
-.part_2_photo_1 {
-    width: 22%;
-}
-.part_2_photo_2 {
-    width: 44%;
-}
-.part_2_photo_3 {
-    width: 30%;
 }
 .all_proects {
     width: 100%;
@@ -395,15 +358,18 @@ textarea {
 }
 label {
     position: relative;
-    margin: 22px 0;
+    margin: 25px 0;
     display: block;
 }
 .message {
+    position: absolute;
     color: red; 
+    top: 37px;
+    left: 0;
     font-style: 20px; 
     padding-left: 10px;
 }
-label > p {
+.input_text {
     margin-left: 35px;
     font-family: 'TT Hoves';
     font-style: normal;
@@ -413,7 +379,12 @@ label > p {
     letter-spacing: 0.03em;
     color: #333333;
 }
-
+.message_symbol {
+    border: 0;
+    position: absolute;
+    top: 10px;
+    color: red;
+}
 @media screen and (max-width: 1280px){
     .container{
       width: 1000px;
@@ -435,21 +406,12 @@ label > p {
         order: 3;
         margin-top: 30px;
     }
-    .hover {
-        padding: 48px 20px;
+    .p_hover {
+        padding-left: 30px;
     }
-    .div_hover .part_1_hover  {
-        padding: 47px 45px;
-    }
-    .div_hover .part_1_hover p {
-        font-size: 40px;
-        line-height: 64px;
-    }
-    .part_2_photo_2 .part_1_hover {
-        padding: 79px 133px;
-    }
-    .part_2_photo_2 .part_1_hover p {
-        font-size: 51px;
+    .p_hover > p {
+        font-size: 49px;
+        line-height: 51px;
     }
 }
 @media screen and (max-width: 1080px){
@@ -461,10 +423,6 @@ label > p {
     }
     .text_img {
         width: 100%;
-    }
-    .button_in_img {
-        left: -2px;
-        bottom: 2px;
     }
     .text_titel {
         order: 2;
@@ -499,28 +457,36 @@ label > p {
     .img_company {
         margin-bottom: 20px;
     }
-    .img_down {
+    .img_part_1 div:nth-child(2) {
         bottom: 0;
     }
-    .zadacha > div {
+    .child {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .zadacha_1, .zadacha_2 {
-        width: 90%;
-        margin: 10px 0;
+    .child > div {
+        width: 90% !important;
+        margin: 10px 0 ;
     }
-    .zadacha_1_text {
-        width: 70%;
+    .zadacha_text {
+        width: 70% !important;
     }
-    .zadacha_1_img {
-        width: 10%;
+    .child  div p { 
+        font-size: 22px !important;
+        line-height: 50px !important;
     }
-    .zadacha_2_img {
-        width: 15%;
+    .zadacha_img {
+        width: 15% !important;
     }
-    .hover > p {
-        font-size: 50px;
+    .img_hover {
+        width: 49% !important;
+    }
+    .p_hover {
+        padding-top: 40px !important;
+    }
+    .p_hover > p {
+        font-size: 35px;
+        line-height: 41px;
     }
     .contact > div {
         flex-wrap: wrap;
@@ -533,34 +499,28 @@ label > p {
         width: 60%;
         order: 2;
     }
-    .part_1_hover {
-        padding: 61px 29px;
-    }
 }
 @media screen and (max-width: 880px){
     .container{
       width: 600px;
     }
-    .img_down, .img_up {
-        position: relative;
+    .img_part_1 div {
+        position: relative !important;
     }
     .img_part_2 {
         margin-bottom: 25px;
     }
-    .div_hover .part_1_hover  p{
-        font-size: 35px;
-        line-height: 48px;
+    .child  div p {
+        font-size: 19px !important;
+        line-height: 35px !important;
     }
-    .div_hover .part_1_hover {
-        padding: 64px 34px;
-    }
-    .part_2_photo_2 .part_1_hover {
-        padding: 87px 72px;
-    } 
 }
 @media screen and (max-width: 680px){
     .container{
       width: 400px;
+    }
+    .text_img {
+        height: 500px;
     }
     h3,h2 {
         font-size: 50px;
@@ -572,18 +532,19 @@ label > p {
     .zadacha {
         margin-bottom: 50px;
     }
-    .zadacha_1_text, .zadacha_2_text {
-        width: 78%;
+    .zadacha_text{
+        width: 78% !important;
     }
-    .zadacha_1_text > p, .zadacha_2_text > p {
-        font-size: 18px;
+    .child  div p {
+        font-size: 15px !important;
+        line-height: 26px !important;
     }
-    .div_hover {
-        width: 100%;
-        margin-bottom: 20px;
+    .img_hover {
+        width: 100% !important;
     }
-    .div_hover .part_1_hover {
-        padding: 63px 34px;
+    .p_hover > p {
+        font-size: 48px;
+        line-height: 53px;
     }
     .contact_form {
         width: 75%; 
@@ -592,6 +553,9 @@ label > p {
 @media screen and (max-width: 480px){
     .container{
       width: 270px;
+    }
+    .text_img {
+        height: 350px;
     }
     .dropdown_menu {
         padding: 10px 0;
@@ -604,7 +568,7 @@ label > p {
         font-size: 35px;
         line-height: 40px;
     }
-    .img_up {
+    .img_part_1 div:nth-child(1) {
         height: 150px;
     }
     .pages {
@@ -624,17 +588,21 @@ label > p {
         font-size: 49px;
         line-height: 43px; 
     }
-    .zadacha_1, .zadacha_2 { 
-        flex-wrap: wrap;
+    .child div { 
+        flex-wrap: wrap !important;
     }
-    .zadacha_1_text, .zadacha_2_text {
-        width: 100%;
+    .zadacha_text {
+        width: 100% !important;
     }
-    .zadacha_1_img, .zadacha_2_img {
-        width: 20%;
+    .zadacha_img     {
+        width: 20% !important;
     }
-    .zadacha_1_text  > p , .zadacha_2_text  > p  {
+    .zadacha_text p  {
         font-size: 14px;
+    }
+    .p_hover > p  {
+        font-size: 34px;
+        line-height: 44px;
     }
     .contact_form {
         width: 90%;
