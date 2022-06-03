@@ -42,7 +42,6 @@ export class CertificateComponent implements OnInit {
     this.getCertificateIcon()
     this.getCertificateTitle ()
   }
-
   getCertificateIcon(){
     let b = this.i;
     this.request.getData(`${environment.http.get_certificate_icon}`).subscribe(res=> {

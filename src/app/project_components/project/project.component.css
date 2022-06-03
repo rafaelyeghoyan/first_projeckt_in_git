@@ -41,6 +41,7 @@ html,body{
   flex: none;
   order: 0;
   flex-grow: 0;
+  border: none;
 }
 .div_section{
   width: 100%;
@@ -60,7 +61,8 @@ html,body{
 }
 .imageChild{
   width: 100%;
-  object-fit: contain;
+  height: 435px;
+  object-fit: cover;
 }
 .divTextsChild{
   width: 48%;
@@ -219,6 +221,44 @@ html,body{
   .VectorNext{
     margin: 0 20px;
   }
+}
+.buttons {
+  margin: 90px 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.prev {
+  width: 53px;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+}
+.next {
+  width: 53px;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+}
+.pages {
+  width: 142px;
+  display: flex;
+  justify-content: space-between;
+}
+.change_page, .fixed_page {
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #BDBDBD;
+}
+.change_page {
+  color: #333333;
+}
+span {
+  border: 1px solid #E0E0E0;
+  transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
 }
 @media screen and (max-width: 800px) {
   .container{
