@@ -11,15 +11,19 @@
             </ul>
         </div>
         <div class="dropdown_menu">
-            <div class="menu_line"></div>
-            <div class="menu_line"></div>
-            <div class="menu_line"></div>
-            <div class="mini_menu">
+            <div class="menu_line" (click)="click_on()"></div>
+            <div class="menu_line" (click)="click_on()"></div>
+            <div class="menu_line" (click)="click_on()"></div>
+            <div class="mini_menu" id="menu_click">
+                <div>
+                    <button (click)="click_off()">X</button>
+                </div>
                 <ul style="list-style-type: none; padding: 0;">
                     <li *ngFor="let item of data">
                       <a class="a_menu" routerLink="{{item.routerlink}}" routerLinkActive="active">{{item.text}}</a>
                     </li>
                 </ul>
+                
             </div>
         </div>
     </div>
