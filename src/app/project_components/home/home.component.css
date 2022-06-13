@@ -245,6 +245,10 @@ span {
     padding-bottom: 15px;
     padding-left: 20px;
 }
+.img div:nth-child(3) .p_hover p {
+    font-size: 50px;
+    line-height: 55px;
+}
 .img_hover:hover .p_hover {
     display: inline-block;
     position: absolute;
@@ -358,15 +362,15 @@ textarea {
 }
 label {
     position: relative;
-    margin: 25px 0;
+    margin: 45px 0;
     display: block;
 }
 .message {
     position: absolute;
     color: red; 
-    top: 37px;
+    top: 35px;
     left: 0;
-    font-style: 20px; 
+    font-size: 17px; 
     padding-left: 10px;
 }
 .input_text {
@@ -410,8 +414,12 @@ label {
         padding-left: 30px;
     }
     .p_hover > p {
-        font-size: 49px;
-        line-height: 51px;
+        font-size: 49px !important;
+        line-height: 51px !important;
+    }
+    .img div:nth-child(3) .p_hover p {
+        font-size: 39px !important;
+        line-height: 44px !important;
     }
 }
 @media screen and (max-width: 1080px){
@@ -484,9 +492,9 @@ label {
     .p_hover {
         padding-top: 40px !important;
     }
-    .p_hover > p {
-        font-size: 35px;
-        line-height: 41px;
+    .p_hover > p, .img div:nth-child(3) .p_hover p {
+        font-size: 35px !important;
+        line-height: 41px !important;
     }
     .contact > div {
         flex-wrap: wrap;
@@ -542,9 +550,9 @@ label {
     .img_hover {
         width: 100% !important;
     }
-    .p_hover > p {
-        font-size: 48px;
-        line-height: 53px;
+    .p_hover > p, .img div:nth-child(3) .p_hover p {
+        font-size: 48px !important;
+        line-height: 53px !important;
     }
     .contact_form {
         width: 75%; 
@@ -600,9 +608,9 @@ label {
     .zadacha_text p  {
         font-size: 14px;
     }
-    .p_hover > p  {
-        font-size: 34px;
-        line-height: 44px;
+    .p_hover > p, .img div:nth-child(3) .p_hover p  {
+        font-size: 34px !important;
+        line-height: 44px !important;
     }
     .contact_form {
         width: 90%;

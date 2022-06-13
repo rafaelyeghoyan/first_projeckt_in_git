@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { RequestService } from 'src/app/service/request.service';
 import { environment } from 'src/environments/environment.prod';
 
@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public request: RequestService) { }
+  constructor(public request: RequestService, public el: ElementRef) { }
 
   ngOnInit(): void {
     this.getRequest();
@@ -30,6 +30,11 @@ export class HeaderComponent implements OnInit {
       this.header_logo = res;
     })
   }
-
+  click_on(){
+    this.el.nativeElement.querySelector("#menu_click").style.display="inline-block";
+  }
+  click_off(){
+    this.el.nativeElement.querySelector("#menu_click").style.display="none";
+  }
 
 }

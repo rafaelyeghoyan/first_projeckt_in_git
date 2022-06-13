@@ -201,6 +201,22 @@
       "routerLink": "/project/inproject"
     }
   ],
+  "form": {
+    "img": "assets/images/home/image 12.png",
+    "alt":"no image",
+    "firstNamePl": "Имя",
+    "phoneNumberPl": "Номер телефона",
+    "phoneMessage1": "Требуется номер телефона",
+    "phoneMessage2": "Номер телефона должен быть только цифры",
+    "emailPl": "E-mail",
+    "emailMessage1": "Требуется Электронная почта",
+    "emailMessage2": "Электронная почта должна быть написана как: текст@gmail.com",
+    "productPl": "Интересующий товар/услуга",
+    "commentPl": "Сообщение",
+    "commentMessage": "Требуется комментарий",
+    "checkboxText": "Отправляя заявку Вы соглашаетесь с политикой конфиденциальности",
+    "message_symbol": "*"
+  },
   "gallery": [
     [{
       "id":1,

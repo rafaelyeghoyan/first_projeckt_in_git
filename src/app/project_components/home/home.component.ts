@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.getCompany_text();
     this.getCompany_img_1();
     this.getConmpany_img_2();
+    this.getForm();
   }
 
   bool_1:any = true;
@@ -55,6 +56,7 @@ export class HomeComponent implements OnInit {
   company_text:any = [];
   company_img_1:any[] = [];
   company_img_2:any = [];
+  form_text:any = [];
 
   getTitel(){
     let ind = this.i;
@@ -91,6 +93,11 @@ export class HomeComponent implements OnInit {
   getConmpany_img_2(){
     this.request.getData(`${environment.http.get_home_company_img_2}`).subscribe((res:any) => {
       this.company_img_2 = res;
+    })
+  }
+  getForm(){
+    this.request.getData(`${environment.http.get_form}`).subscribe((res:any) => {
+      this.form_text = res;
     })
   }
 

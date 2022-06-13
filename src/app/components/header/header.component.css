@@ -8,9 +8,8 @@
 .img {
   width: 70px;
 }
-.menu{
+ul {
   display: flex;
-  justify-content: space-between;
 }
 li {
   display: inline-block;
@@ -51,22 +50,37 @@ li {
 }
 .mini_menu {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   background-image: linear-gradient(#c0d3e1, white 70%);
   right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   padding: 0 15px;
 }
 .mini_menu ul li {
   display: block;
   margin: 5px 0;
 }
-.dropdown_menu:hover .mini_menu{
-  display: inline-block;
+.mini_menu div {
+  text-align: right;
+  margin-top: 20px;
 }
+button {
+  border: 0;
+  font-size: 25px;
+  padding: 2px 20px;
+}
+/* .dropdown_menu:hover .mini_menu{
+  display: inline-block;
+} */
 @media screen and (max-width: 1280px){
   .container{
     width: 1000px;
+  }
+  ul li:last-child {
+    margin: 0;
   }
 }
 @media screen and (max-width: 1080px){
@@ -77,6 +91,26 @@ li {
 @media screen and (max-width: 880px){
   .container{
     width: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 30px;
+  }
+  ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  li{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px){
+  .container{
+    width: 400px;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .menu {
     display: none;
@@ -84,10 +118,17 @@ li {
   .dropdown_menu {
     display: inline-block;
   }
-}
-@media screen and (max-width: 680px){
-  .container{
-    width: 400px;
+  ul{
+    margin: 20px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mini_menu ul li {
+    margin: 10px 0;
+  }
+  .a_menu {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 @media screen and (max-width: 480px){

@@ -70,42 +70,42 @@
                 <div class="contact_form">
                     <form [formGroup]="form" (ngSubmit)="submit()">
                         <label>
-                            <input class="input" formControlName="firstname" type="text" placeholder="Имя" name="firstname">
+                            <input class="input" formControlName="firstname" type="text" placeholder="{{form_text.firstNamePl}}" name="firstname">
                         </label>
                         <label>
-                            <input class="input" formControlName="phonenumber" type="tel" placeholder="Номер телефона" name="phonenumber">
+                            <input class="input" formControlName="phonenumber" type="tel" placeholder="{{form_text.phoneNumberPl}}" name="phonenumber">
                             <p class="message" *ngIf="form.get('phonenumber')?.hasError('required') && (form.get('phonenumber')?.dirty || form.get('phonenumber')?.touched)">
-                                The phone number is required</p>
+                                {{form_text.phoneMessage1}}</p>
                             <p class="message" *ngIf="form.get('phonenumber')?.hasError('pattern')">
-                                The phone number is must be only by number</p>
-                                <span *ngIf="form.get('phonenumber')?.hasError('required')" style="left: 130px;" class="message_symbol">*</span>
+                                {{form_text.phoneMessage2}}</p>
+                                <span *ngIf="form.get('phonenumber')?.hasError('required')" style="left: 130px;" class="message_symbol">{{form_text.message_symbol}}</span>
                         </label>
                         <label>
-                           <input class="input" formControlName="email" type="text" placeholder="E-mail" name="email">
+                           <input class="input" formControlName="email" type="text" placeholder="{{form_text.emailPl}}" name="email">
                             <p class="message" *ngIf="form.get('email')?.hasError('required') && (form.get('email')?.dirty || form.get('email')?.touched)">
-                                The E-mail is required</p>
+                                {{form_text.emailMessage1}}</p>
                             <p class="message" *ngIf="form.get('email')?.hasError('pattern')">
-                                The E-mail is must be written example test@gmail.com</p>
-                                <span *ngIf="form.get('email')?.hasError('required')" style="left: 62px;" class="message_symbol">*</span>
+                                {{form_text.emailMessage2}}</p>
+                                <span *ngIf="form.get('email')?.hasError('required')" style="left: 62px;" class="message_symbol">{{form_text.message_symbol}}</span>
                         </label>
                         <label>
-                            <input class="input" formControlName="product" type="text" placeholder="Интересующий товар/услуга" name="product">
+                            <input class="input" formControlName="product" type="text" placeholder="{{form_text.productPl}}" name="product">
                         </label>
                         <label>
-                            <textarea name="comment" formControlName="comment" placeholder="Сообщение" rows="9"></textarea>
+                            <textarea name="comment" formControlName="comment" placeholder="{{form_text.commentPl}}" rows="9"></textarea>
                             <p class="message" *ngIf="form.get('comment')?.hasError('required') && (form.get('comment')?.dirty || form.get('comment')?.touched)">
-                                The Comment is required</p>
-                                <span *ngIf="form.get('comment')?.hasError('required')" style="left: 90px;" class="message_symbol">*</span>
+                                {{form_text.commentMessage}}</p>
+                                <span *ngIf="form.get('comment')?.hasError('required')" style="left: 90px;" class="message_symbol">{{form_text.message_symbol}}</span>
                         </label>
                         <label>
                             <input style="position: absolute;" type="checkbox" name="agree">
-                            <p class="input_text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                            <p class="input_text">{{form_text.checkboxText}}</p>
                         </label>
                         <button [disabled]="form.invalid">ОТПРАВИТЬ<span>&#8594;</span></button>
                     </form>
                 </div>
                 <div class="contact_img">
-                    <img src="assets/images/home/image 12.png" alt="no image">
+                    <img src="{{form_text.img}}" alt="{{form_text.alt}}">
                 </div>
             </div>
         </div>

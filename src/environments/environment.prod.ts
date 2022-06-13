@@ -14,6 +14,7 @@ export const environment = {
     get_home_company_text: url + 'home_company_text',
     get_home_zadacha: url + 'home_zadacha',
     get_home_project: url + 'home_project',
+    get_form: url + 'form',
     get_gallery: url + 'gallery',
     get_project : url + "project",
     get_inproject : url + "inproject",
