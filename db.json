@@ -395,7 +395,7 @@
       "p": "Описание или пояснение к изображению."
     },
     {
-      "id":33, 
+      "id":33,
       "src": "assets/images/galleria/Rectangle26.png",
       "alt":  "no image",
       "p": "Описание или пояснение к изображению."
@@ -625,6 +625,60 @@
       "id" : 1,
       "image": "/assets/JorImages/imagesJor5.png",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a typespecimen book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets\n            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with."
+    }
+  ],
+  "cotact": [
+    {
+      "id": 1,
+      "title": "КОНТАКТНАЯ",
+      "subtitle": "ИНФОРМАЦИЯ",
+      "projectName": "«Digital Project»",
+      "addres": "г. Караганда, ул. Телевизионная 10",
+      "phoneNumber": "+7 (701) 77 76 811",
+      "email": "Galym.sultanov@mail.ru",
+      "src":"assets/images/map/Снимок%20экрана%202022-05-18%20150526.png"
+    }
+  ],
+  "contactFormName": [
+    {
+      "id": 1,
+      "input": "<input type=\"text\" name=\"username\" placeholder=\"Имя\" formControlName=\"username\">"
+    }
+  ],
+  "contactFormTelNumber": [
+    {
+      "id": 1,
+      "input": "<input type=\"tel\" placeholder=\"Номер телефона\" required name=\"tellnmber\" formControlName=\"tellnmber\">"
+    }
+  ],
+  "contactFormEmail": [
+    {
+      "id": 1,
+      "input": "<input type=\"email\" name=\"email\" required placeholder=\"E-mail\" formControlName=\"email\">"
+    }
+  ],
+  "contactFormProduct": [
+    {
+      "id": 1,
+      "input": "<input type=\"text\" name=\"product\" placeholder=\"Интересующий товар/услуга\">"
+    }
+  ],
+  "contactFormTextarea": [
+    {
+      "id": 1,
+      "textarea": "<textarea placeholder=\"Сообщение\" name=\"sms\" required formControlName=\"sms\"></textarea>"
+    }
+  ],
+  "contactFormCheckbox": [
+    {
+      "id": 1,
+      "input": "<input type=\"checkbox\" required name=\"secur\" formControlName=\"secur\">"
+    }
+  ],
+  "contactFormCheckboxText": [
+    {
+      "id": 1,
+      "label": "Отправляя заявку Вы соглашаетесь с политикой конфиденциальности"
     }
   ]
 }

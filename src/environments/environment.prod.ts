@@ -18,7 +18,15 @@ export const environment = {
     get_project : url + "project",
     get_inproject : url + "inproject",
     get_certificate_icon: url + 'certificate_icon',
-    get_certificate_titles:url + 'certificate'
+    get_certificate_titles:url + 'certificate',
+    get_contact:url + 'cotact',
+    get_contact_contactFormName:url + 'contactFormName',
+    get_contact_contactFormTelNumber:url + 'contactFormTelNumber',
+    get_contact_contactFormEmail:url + 'contactFormEmail',
+    get_contact_contactFormProduct:url + 'contactFormProduct',
+    get_contact_contactFormTextarea:url + 'contactFormTextarea',
+    get_contact_contactFormCheckbox:url + 'contactFormCheckbox',
+    get_contact_contactFormCheckboxText:url + 'contactFormCheckboxText'
   }
 
 
