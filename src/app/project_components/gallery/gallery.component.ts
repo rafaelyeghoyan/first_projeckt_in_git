@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from 'src/app/service/request.service';
 import { environment } from 'src/environments/environment.prod';
+import { Gallery } from './gallery';
 
 @Component({
   selector: 'app-gallery',
@@ -16,8 +17,8 @@ export class GalleryComponent implements OnInit {
     this.getRequest();
   }
 
-  data: any[] =[]
-
+  data: Gallery [] = []
+  
   bool_1:any = true;
   bool_2:any = false;
   i:any = 1;
@@ -52,7 +53,7 @@ export class GalleryComponent implements OnInit {
           this.num_end = '0' + this.num_end;
         }
         let img = this.data;
-        res.forEach(function (item:any,index:any,arr:any) {
+        res.forEach(function (item:any, index:any, arr:any) {
           if((ind - 1 ) == index){
             img = arr[index];
           }

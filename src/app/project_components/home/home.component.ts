@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder,  Validators } from '@angular/forms';
 import { RequestService } from 'src/app/service/request.service';
 import { environment } from 'src/environments/environment.prod';
+import { HomeProject } from './home-project';
+import { HomeZadacha } from './home-zadacha';
+import { HomeCompany } from './home_company';
 
 @Component({
   selector: 'app-home',
@@ -51,10 +54,10 @@ export class HomeComponent implements OnInit {
   }
 
   title_data: any = [];
-  zadacha_data: any [] = [];
-  project_data: any [] = [];
+  zadacha_data: HomeZadacha [] = [];
+  project_data: HomeProject [] = [];
   company_text:any = [];
-  company_img_1:any[] = [];
+  company_img_1:HomeCompany[] = [];
   company_img_2:any = [];
   form_text:any = [];
 
