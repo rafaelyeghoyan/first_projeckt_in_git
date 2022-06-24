@@ -26,23 +26,40 @@
       <h4>Задать вопрос
       </h4><span (click)="goPrevButton()">X</span>
       </div>
-      <form [formGroup]="form">
-        <input type="text" name="username" placeholder="Имя" formControlName="username">
-        <div>
-          <input type="tel" placeholder="Номер телефона" required name="tellnmber" formControlName="tellnmber">
-        </div>
-        <input type="email" name="email" required placeholder="E-mail" formControlName="email">
-        <div>
-          <input type="text" name="product" placeholder="Интересующий товар/услуга">
-        </div>
-        <textarea placeholder="Сообщение" name="sms" required formControlName="sms"></textarea>
-        <div class="checkbox_block">
-          <input type="checkbox" required name="secur" formControlName="secur">
-          <label>Отправляя заявку Вы соглашаетесь
-            с политикой
-            конфиденциальности</label>
-        </div>
-        <button (click)="buttonSend()" type="submit" [disabled]="form.invalid">Отправить</button>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <label>
+          <input class="input" formControlName="firstname" type="text" placeholder="{{form_text.firstNamePl}}" name="firstname">
+        </label>
+        <label>
+          <input class="input" formControlName="phonenumber" type="tel" placeholder="{{form_text.phoneNumberPl}}" name="phonenumber">
+          <p class="message" *ngIf="form.get('phonenumber')?.hasError('required') && (form.get('phonenumber')?.dirty || form.get('phonenumber')?.touched)">
+            {{form_text.phoneMessage1}}</p>
+          <p class="message" *ngIf="form.get('phonenumber')?.hasError('pattern')">
+            {{form_text.phoneMessage2}}</p>
+          <span *ngIf="form.get('phonenumber')?.hasError('required')" style="left: 130px;" class="message_symbol">{{form_text.message_symbol}}</span>
+        </label>
+        <label>
+          <input class="input" formControlName="email" type="text" placeholder="{{form_text.emailPl}}" name="email">
+          <p class="message" *ngIf="form.get('email')?.hasError('required') && (form.get('email')?.dirty || form.get('email')?.touched)">
+            {{form_text.emailMessage1}}</p>
+          <p class="message" *ngIf="form.get('email')?.hasError('pattern')">
+            {{form_text.emailMessage2}}</p>
+          <span *ngIf="form.get('email')?.hasError('required')" style="left: 62px;" class="message_symbol">{{form_text.message_symbol}}</span>
+        </label>
+        <label>
+          <input class="input" formControlName="product" type="text" placeholder="{{form_text.productPl}}" name="product">
+        </label>
+        <label>
+          <textarea name="comment" formControlName="comment" placeholder="{{form_text.commentPl}}" rows="9"></textarea>
+          <p class="message" *ngIf="form.get('comment')?.hasError('required') && (form.get('comment')?.dirty || form.get('comment')?.touched)">
+            {{form_text.commentMessage}}</p>
+          <span *ngIf="form.get('comment')?.hasError('required')" style="left: 90px;" class="message_symbol">{{form_text.message_symbol}}</span>
+        </label>
+        <label>
+          <input style="position: absolute;" type="checkbox" name="agree">
+          <p class="input_text">{{form_text.checkboxText}}</p>
+        </label>
+        <button [disabled]="form.invalid" (click)="buttonSend()">ОТПРАВИТЬ<span>&#8594;</span></button>
       </form>
     </div>
     <div class="thanks_block">

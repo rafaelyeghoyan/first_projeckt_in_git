@@ -29,6 +29,4 @@ export const environment = {
     get_contact_contactFormCheckbox:url + 'contactFormCheckbox',
     get_contact_contactFormCheckboxText:url + 'contactFormCheckboxText'
   }
-
-
 };
