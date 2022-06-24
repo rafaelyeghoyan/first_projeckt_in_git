@@ -1,5 +1,6 @@
 {
   "header_logo":{
+    "id": 1,
     "src":"assets/images/header/Group 11.png",
     "alt":"no image"
   },
@@ -7,7 +8,8 @@
     {
       "id": 1,
       "text": "ГЛАВНАЯ",
-      "routerlink": "/home"
+      "routerlink": "/home",
+      "ti": "sshs"
     },
     {
       "id": 2,
@@ -30,7 +32,7 @@
       "routerlink": "/contacts"
     }
   ],
-  "footer": [
+  "footer_menu": [
     {
       "id":1,
       "routerlink": "/home",
@@ -58,11 +60,13 @@
     }
   ],
   "footer_logo": {
+    "id":1,
     "routerlink": "/home",
     "src":"assets/images/footer/Group 11 1.png",
     "alt":"no image"
   },
   "contact_footer": {
+    "id":1,
     "map_img": "assets/images/footer/Vector.png",
     "map_text": "100000, Республика  Казахстан,  г. Караганда, ул. Телевизионная 10",
     "map_href": "https://www.google.com/maps",
@@ -140,6 +144,7 @@
     "alt":"no image"
   },
   "home_company_text": {
+    "id":1,
     "title": "О компании",
     "button": "ЧИТАТЬ",
     "routerLink": "/certificate",
@@ -202,6 +207,7 @@
     }
   ],
   "form": {
+    "id":1,
     "img": "assets/images/home/image 12.png",
     "alt":"no image",
     "firstNamePl": "Имя",
@@ -243,7 +249,7 @@
       "p": "Описание или пояснение к изображению."
     },
     {
-     " id":5,
+     "id":5,
       "src": "assets/images/galleria/Rectangle26.png",
       "alt": "no image",
       "p": "Описание или пояснение к изображению."

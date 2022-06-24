@@ -4,7 +4,7 @@ export const environment = {
   http: {
     get_header: url + 'header',
     get_header_logo: url + 'header_logo',
-    get_footer: url + 'footer',
+    get_footer_menu: url + 'footer_menu',
     get_footer_logo: url + 'footer_logo',
     get_contact_footer: url + 'contact_footer',
     get_media_footer: url + 'media_footer',

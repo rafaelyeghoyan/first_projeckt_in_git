@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from 'src/app/service/request.service';
 import { environment } from 'src/environments/environment.prod';
+import { Footer } from './footer';
 
 @Component({
   selector: 'app-footer',
@@ -12,27 +13,27 @@ export class FooterComponent implements OnInit {
   constructor(public request: RequestService) { }
 
   ngOnInit(): void {
-    this.getRequest();
+    this.get_footer_menu();
     this.get_footer_logo();
     this.get_contact_footer();
     this.get_media_footer();
   }
 
-  data: any [] = []
-  footerLogo: any = []
-  contact_footer: any = []
-  media_footer: any[] = []
+  footer_menu: Footer[] = [];
+  footer_logo: any = [];
+  contact_footer: any = [];
+  media_footer: Footer[] = [];
 
 
 
-  getRequest(){
-    this.request.getData(`${environment.http.get_footer}`).subscribe((res: any) => {
-      this.data = res;
+  get_footer_menu(){
+    this.request.getData(`${environment.http.get_footer_menu}`).subscribe((res: any) => {
+      this.footer_menu = res;
     })
   }
   get_footer_logo(){
     this.request.getData(`${environment.http.get_footer_logo}`).subscribe((res: any) => {
-      this.footerLogo = res;
+      this.footer_logo = res;
     })
   }
   get_contact_footer(){

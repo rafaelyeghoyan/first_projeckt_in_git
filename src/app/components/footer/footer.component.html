@@ -1,15 +1,15 @@
 <footer>
     <div class="container">
         <div class="logo">
-            <a routerLink="{{footerLogo.routerlink}}">
-                <img style="width: 100%;" src="{{footerLogo.src}}" alt="{{footerLogo.alt}}">
+            <a routerLink="{{footer_logo.routerlink}}">
+                <img style="width: 100%;" src="{{footer_logo.src}}" alt="{{footer_logo.alt}}">
             </a>
         </div>
         <div class="info_contact">
             <div class="info">
                 <ul style="list-style-type: none; padding: 0; margin: 0;">
                     <li><h5>Информация</h5></li>
-                    <li *ngFor="let item of data"><a class="a_info" routerLink="{{item.routerlink}}">{{item.a_text}}</a></li>
+                    <li *ngFor="let item of footer_menu"><a class="a_info" routerLink="{{item.routerlink}}">{{item.a_text}}</a></li>
                 </ul>
             </div>
             <div class="contact">
