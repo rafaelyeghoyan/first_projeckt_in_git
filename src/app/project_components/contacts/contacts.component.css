@@ -80,7 +80,6 @@ button.contact_button{
 }
 .hidden_block {
   width: 469px;
-  height: 590px;
   padding: 26px 39px;
   position: absolute;
   background: #ffffff;
@@ -116,65 +115,14 @@ button.contact_button{
   font-size: 25px;
   cursor: pointer;
 }
-form input{
-  display: inline-block;
-  margin-bottom: 10px;
-  width: 391px;
-  height: 46px;
-  font-size: 20px;
-}
-textarea{
-  width: 391px;
-  height: 147px;
-  resize: none;
-}
-.checkbox_block{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-form .checkbox_block input[type="checkbox"]{
-  height: 23px;
-  width: 24px;
-  margin: 0;
-}
-form input::placeholder{
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.04em;
-  color: #8D8D8D;
-  padding: 15px 341px 14px 21px;
-}
-form textarea::placeholder{
-  font-family: 'TT Hoves';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.04em;
-  color: #8D8D8D;
-  padding-top: 15px;
-  padding-left: 21px;
-}
-form .checkbox_block input[type="checkbox"] + label{
-  font-family: 'TT Hoves';
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
-  letter-spacing: 0.03em;
-  color: #333333;
-  display: inline-block;
-  width: 360px;
-  margin-top: 5px;
-}
-form button{
-  display: inline-block;
-  width: 391px;
-  height: 42px;
-  background: #333333;
+.input {
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 15px 0 15px 21px;
+   border: none;
+   background: #F3F3F3;
+ }
+form > button {
   font-family: 'TT Hoves';
   font-style: normal;
   font-weight: 400;
@@ -182,9 +130,50 @@ form button{
   line-height: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background: #333333;
   color: #FFFFFF;
-  padding: 15px 150px;
-  margin-top: 40px;
+  padding: 30px 47px;
+  border: none;
+}
+form > button > span {
+  border: none;
+  margin-left: 15px;
+}
+textarea {
+  width: 100%;
+  padding: 15px 0 0 21px;
+  background: #F3F3F3;
+  border: none;
+  resize: none;
+}
+label {
+  position: relative;
+  margin: 45px 0;
+  display: block;
+}
+.message {
+  position: absolute;
+  color: red;
+  top: 35px;
+  left: 0;
+  font-size: 17px;
+  padding-left: 10px;
+}
+.input_text {
+  margin-left: 35px;
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+.message_symbol {
+  border: 0;
+  position: absolute;
+  top: 10px;
+  color: red;
 }
 .thanks_block .content_block span{
   display: block;

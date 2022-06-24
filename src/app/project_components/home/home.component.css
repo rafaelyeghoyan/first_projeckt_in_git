@@ -105,7 +105,7 @@ span {
     width: 56%;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;  
+    padding-top: 30px;
 }
 .img_part_1 {
     width: 48%;
@@ -239,7 +239,7 @@ span {
     padding-top: 40px;
     background: #333333a3;
     display: none;
-} 
+}
 .img div:nth-child(5) > .p_hover, .img div:nth-child(3) > .p_hover {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -359,6 +359,7 @@ textarea {
     padding: 15px 0 0 21px;
     background: #F3F3F3;
     border: none;
+  resize: none;
 }
 label {
     position: relative;
@@ -367,10 +368,10 @@ label {
 }
 .message {
     position: absolute;
-    color: red; 
+    color: red;
     top: 35px;
     left: 0;
-    font-size: 17px; 
+    font-size: 17px;
     padding-left: 10px;
 }
 .input_text {
@@ -479,7 +480,7 @@ label {
     .zadacha_text {
         width: 70% !important;
     }
-    .child  div p { 
+    .child  div p {
         font-size: 22px !important;
         line-height: 50px !important;
     }
@@ -555,7 +556,7 @@ label {
         line-height: 53px !important;
     }
     .contact_form {
-        width: 75%; 
+        width: 75%;
     }
 }
 @media screen and (max-width: 480px){
@@ -589,14 +590,14 @@ label {
     .text_company  h2 {
         font-size: 41px;
     }
-    .text_company > button { 
+    .text_company > button {
         padding: 20px 35px;
     }
-    .zadacha  > h2, .proects > h2, .contact > h2 { 
+    .zadacha  > h2, .proects > h2, .contact > h2 {
         font-size: 49px;
-        line-height: 43px; 
+        line-height: 43px;
     }
-    .child div { 
+    .child div {
         flex-wrap: wrap !important;
     }
     .zadacha_text {
