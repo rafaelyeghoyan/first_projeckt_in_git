@@ -74,9 +74,12 @@ export class HomeComponent implements OnInit {
     })
   }
   getZadacha(){
-    this.request.getData(`${environment.http.get_home_zadacha}`).subscribe((res:any) => {
+    this.request.getData(`${environment.http.get_home_zadacha}`).subscribe((res: any) => {
       this.zadacha_data = res;
+      // console.log(this.zadacha_data);
+      
     })
+
   }
   getProject(){
     this.request.getData(`${environment.http.get_home_project}`).subscribe((res:any) => {

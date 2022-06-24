@@ -1,5 +1,5 @@
 export interface HomeZadacha {
-    id:1,
+    id: boolean,
     src: string,
     alt: string,
     text: string

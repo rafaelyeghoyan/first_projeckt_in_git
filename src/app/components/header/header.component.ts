@@ -24,7 +24,6 @@ export class HeaderComponent implements OnInit {
   getRequest(){
     this.request.getData(`${environment.http.get_header}`).subscribe((res: Header ) => {
       this.data = res;
-      // console.log(res)
     })
   }
   getimg(){
